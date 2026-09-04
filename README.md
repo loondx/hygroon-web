@@ -1,184 +1,162 @@
-# 🚀 Hygroon Web — Growth Systems & Local SEO Platform
+# Hygroon Web: Turn More Enquiries Into Booked Work
 
-> **Hygroon Web** is the production-grade Next.js 16 (React 19) public application and SEO engine for **Hygroon** — the premier Local SEO and Revenue Growth System for home service contractors (HVAC, Waterproofing, Drainage, Water Restoration, Pest Control, etc.).
+<div align="center">
+
+![Hygroon Logo](public/og-image.png)
+
+### The Premier Growth Platform & Local SEO Infrastructure for Home Service Contractors
+
+[![Next.js 16](https://img.shields.io/badge/Next.js-16.2-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![React 19](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![IndexNow Ready](https://img.shields.io/badge/IndexNow-Enabled-008080?style=for-the-badge)](https://www.indexnow.org/)
+[![License](https://img.shields.io/badge/License-Proprietary-amber?style=for-the-badge)](https://hygroon.com)
+
+[Live Web Platform](https://hygroon.com) • [HVAC Industry Solution](https://hygroon.com/industries/hvac) • [Run 60-Second Diagnostic](https://hygroon.com/analyze) • [Insights Editorial Hub](https://hygroon.com/insights)
+
+</div>
 
 ---
 
-## 📋 Table of Contents
-1. [Architecture Overview](#-architecture-overview)
-2. [SEO & Ranking Engine Architecture](#-seo--ranking-engine-architecture)
-3. [The Ultimate SEO Best Practices & Ranking SOP](#-the-ultimate-seo-best-practices--ranking-sop)
-4. [Structured Data & Schema Markup (JSON-LD)](#-structured-data--schema-markup-json-ld)
-5. [AI Search & Generative Engine Optimization (GEO)](#-ai-search--generative-engine-optimization-geo)
-6. [How to Add New Industry Landing Pages](#-how-to-add-new-industry-landing-pages)
-7. [Developer Operations & Verification](#-developer-operations--verification)
+## Executive Summary
+
+**Hygroon** is a specialized Local SEO, intake automation, and growth platform engineered specifically for U.S. home-service contractors (HVAC, Basement Waterproofing, Drainage, Water Restoration, Pest Control, Pool Services, Property Maintenance, and Facility Services). 
+
+Most home-service businesses do not suffer from a lack of market demand: they suffer from **demand leakage** across 5 critical stages of the customer journey:
+
+1. **Discovery Leakage**: Missing top local positions in the Google Maps 3-Pack when local distress searches occur.
+2. **Website Conversion Leakage**: Mobile UX friction, missing one-tap phone buttons, and slow page loading.
+3. **Intake Contact Leakage**: Unanswered calls after 5:00 PM or on weekends dropping into traditional voicemail.
+4. **Response Latency Leakage**: Slow call-backs allowing homeowners to contact competing contractors.
+5. **Estimate Follow-Up Leakage**: Open replacement quotes ($5k to $15k) sitting without automated follow-up.
+
+Hygroon systematically identifies and seals these leakage points, turning raw search interest into dispatched, revenue-generating service calls.
 
 ---
 
-## 🏗️ Architecture Overview
+## Primary Platform Pillars
 
-The web application is engineered with Next.js 16 App Router, TailwindCSS, TypeScript, and React 19.
+### 1. Local Search Prominence (Google Maps 3-Pack)
+- **Hyper-Local Positioning**: Optimized for high-intent emergency service queries (e.g. *"24/7 emergency AC repair near me"*, *"furnace replacement contractor"*, *"foundation repair specialist"*).
+- **Google Business Profile (GBP) Authority**: Service area alignment, category optimization, and automated review recency velocity.
 
-### Key Directory Structure:
+### 2. Speed-to-Lead & Missed Call SMS Textback
+- **15-Second Automated Response**: When an inbound call goes unanswered after hours or during peak dispatch volume, an automated SMS textback triggers within 15 seconds to initiate two-way service booking before the customer contacts a competitor.
+
+### 3. Interactive Business Growth Diagnostic (`/analyze`)
+- **60-Second Audit Engine**: Evaluates local search prominence, review recency, mobile conversion friction, and response speed.
+- **Evidence Taxonomy**: Categorizes findings into explicit evidence levels (`OBSERVED`, `CALCULATED`, `INFERRED`, `NEEDS CONFIRMATION`).
+
+### 4. Generative Engine Optimization (GEO & AI Search)
+- **AI Search Readiness**: Native support for LLM crawlers via structured manifests (`/public/llms.txt`, `/public/llms-full.txt`).
+- **AI Referral Attribution**: Built-in tracking for visitors arriving from generative answer engines (`chatgpt.com`, `claude.ai`, `perplexity.ai`, `searchgpt`).
+
+### 5. Evidence-First Content Architecture (`/insights`)
+- **Actionable Industry Research**: Evidence-grounded operational guides targeting U.S. HVAC contractors covering after-hours lead loss, speed-to-lead benchmarks, mobile conversion UX, and Google Maps SEO.
+
+---
+
+## Technical SEO & Structured Data Infrastructure
+
+Hygroon Web is built on a **Search Prominence First** engineering standard:
+
+- **Canonical Domain Enforcement**: Automatic 301 redirection from `www.hygroon.com` to `hygroon.com`.
+- **Search & AI Bot Directives (`src/app/robots.ts`)**: Explicitly allows search crawlers and AI bots (`Googlebot`, `Bingbot`, `GPTBot`, `ClaudeBot`, `OAI-SearchBot`) while disallowing token-gated private routes (`/reports/`, `/proposals/`, `/onboarding/`, `/api/`).
+- **Dynamic Sitemap Generation (`src/app/sitemap.ts`)**: Programmatically registers all 33 production routes with priority weighting and change frequencies.
+- **IndexNow Integration (`src/lib/indexnow.ts`)**: Instant index notification endpoint supporting Bing, Yandex, and compatible engines (`/8f3b4a2c1d9e.txt`).
+- **Factually Grounded JSON-LD Schema**:
+  - `Organization`: Global entity attributes, brand mark, and official links.
+  - `WebSite`: Structure and navigation metadata.
+  - `OfferCatalog`: Categorized home-service trade offerings (HVAC, Waterproofing, Drainage, Restoration).
+  - `BreadcrumbList`: Dynamic breadcrumb snippet generation on deep sub-pages.
+  - `Article`: Schema markup for all editorial research guides.
+
+---
+
+## Repository Architecture
+
 ```
 hygroon-web/
 ├── public/
-│   ├── llms.txt               # Lightweight LLM/AI search manifest
-│   ├── llms-full.txt          # Full service taxonomy & context for AI search engines
-│   ├── og-image.png           # Global OpenGraph social preview image (1200x630)
-│   └── logo.png / logo.svg    # High-resolution brand visual assets
+│   ├── 8f3b4a2c1d9e.txt       # IndexNow verification key file
+│   ├── llms.txt               # Machine-readable quick index for AI search crawlers
+│   ├── llms-full.txt          # Deep service taxonomy & entity context for LLMs
+│   ├── og-image.png           # High-resolution social media preview image
+│   └── logo.png / logo.svg    # Brand visual identity assets
 ├── src/
 │   ├── app/
-│   │   ├── layout.tsx         # Root layout with site-wide JSON-LD (Organization, ProfessionalService, OfferCatalog)
-│   │   ├── page.tsx           # High-converting homepage
-│   │   ├── sitemap.ts         # Dynamic sitemap generation with priority & changefreq
-│   │   ├── robots.ts          # Search engine crawler directive rules & sitemap pointer
-│   │   ├── about/             # Brand story & Local SEO methodology
-│   │   ├── analyze/           # Interactive local business audit & diagnostic engine
-│   │   ├── contact/           # High-intent lead routing and contact handlers
-│   │   ├── growth-review/     # Consultation scheduling
-│   │   ├── industries/        # High-intent industry landing pages (HVAC, Drainage, etc.)
-│   │   └── insights/ & results/ # Value-driven research and verifiable case studies
-│   ├── components/            # Reusable UI & Schema components (BreadcrumbJsonLd, Navbar, Footer, etc.)
-│   ├── config/                # Centralized brand and market configuration wrappers
-│   ├── lib/                   # Core business logic, validation, analytics & scroll tracking
-│   └── shared/                # Core brand tokens, types, and supported market matrices
+│   │   ├── layout.tsx         # Root layout with site-wide JSON-LD schema & tracking
+│   │   ├── page.tsx           # Homepage & customer journey overview
+│   │   ├── sitemap.ts         # Sitemap generator for search engines
+│   │   ├── robots.ts          # Crawler directive rules
+│   │   ├── how-it-works/      # 5-stage leakage methodology & evidence taxonomy
+│   │   ├── privacy/           # Privacy policy & A2P 10DLC SMS compliance
+│   │   ├── terms/             # Terms of service
+│   │   ├── analyze/           # 60-second multi-stage business diagnostic tool
+│   │   ├── growth-review/     # Consultation request intake
+│   │   ├── industries/        # Trade verticals (HVAC, Waterproofing, Drainage, etc.)
+│   │   └── insights/          # Evidence-based operational articles & research guides
+│   ├── components/            # UI & schema components (Navbar, Footer, BreadcrumbJsonLd)
+│   ├── config/                # Brand and market configuration parameters
+│   └── lib/                   # Analytics, attribution capture, IndexNow, and diagnostic logic
+└── src/**/*.spec.ts           # Automated test suite (60/60 tests passing)
 ```
 
 ---
 
-## 🎯 SEO & Ranking Engine Architecture
+## Getting Started & Local Development
 
-Hygroon Web is designed around a **Search Engine Prominence First** framework:
+### Prerequisites
+- Node.js 20.x or higher
+- npm 10.x or higher
 
-1. **Root Layout Metadata Base**: Configured with `metadataBase: new URL(brandConfig.website)` to guarantee absolute canonical URLs across all pages and social shares.
-2. **Canonical Links**: Automatically attached to every public route via Page Metadata (`alternates: { canonical: '/route' }`).
-3. **Robots Directives (`robots.ts`)**:
-   - Allows public marketing and industry landing pages to be indexed.
-   - Strictly disallows token-gated private routes (`/reports/`, `/proposals/`, `/onboarding/`, `/api/`).
-4. **Sitemap Infrastructure (`sitemap.ts`)**:
-   - Programmatically builds valid sitemaps containing all top-level public pages and active industry vertical landing pages.
-   - Assigns priority ratings (e.g., `1.0` for homepage, `0.9` for top industry verticals like `/industries/hvac` and `/analyze`).
-
----
-
-## ⚡ The Ultimate SEO Best Practices & Ranking SOP
-
-Follow this simple 7-step checklist to ensure every page on this website ranks #1 on search engines:
-
-### 1. Title Tag & H1 Hierarchy
-- **Title Tag Rule**: Max 60 characters. Format: `{Primary Keyword} | Hygroon` or `{Keyword} for {Industry} | Hygroon`.
-- **H1 Tag Rule**: Exactly ONE `<h1>` tag per page, containing the primary search query (e.g., `Local SEO & Growth Systems for HVAC Contractors`).
-- **Subheadings**: Use `<h2>` for major sections and `<h3>` for supporting sub-features. Never skip levels.
-
-### 2. Meta Description Optimization
-- Keep meta descriptions between **140–160 characters**.
-- Include primary target keywords + clear value proposition + CTA.
-- *Example*: *"Hygroon is the premier Local SEO agency for HVAC contractors. Rank #1 on Google Maps 3-Pack, capture missed calls with SMS textback, and grow revenue."*
-
-### 3. High-Intent Keyword Density & Semantic Entities
-- Include exact-match emergency and high-intent terms naturally: `Google Maps 3-Pack`, `Speed to Lead`, `AC Repair Local SEO`, `Missed Call SMS Recovery`, `HVAC Lead Generation`.
-- Avoid keyword stuffing—write for distressed service business owners while establishing topical authority.
-
-### 4. Technical Image Optimization
-- Always use Next.js `<Image />` component with `width`, `height`, and explicit `alt` attributes.
-- Set `priority` on above-the-fold images (e.g., Navbar logo, Hero visuals) to improve **Largest Contentful Paint (LCP)**.
-
-### 5. Internal Linking & Anchor Text
-- Link keyword-rich anchor text internally (e.g., link "HVAC Local SEO" to `/industries/hvac`).
-- Ensure no orphaned pages exist—every page must be reachable from the Navbar, Footer, or Sitemap.
-
-### 6. Breadcrumb Schema (`BreadcrumbJsonLd`)
-- Include `<BreadcrumbJsonLd trail={[...]} />` on all deep pages so search engines display rich navigation paths in search snippets.
-
-### 7. Core Web Vitals Performance
-- Keep Cumulative Layout Shift (CLS) near `0` by pre-allocating image dimensions.
-- Use Geist variable font for instantaneous font load times.
-
----
-
-## 🏷️ Structured Data & Schema Markup (JSON-LD)
-
-Hygroon Web implements 5 layers of Schema.org JSON-LD to dominate Google rich snippets:
-
-| Schema Type | Location | Purpose |
-| :--- | :--- | :--- |
-| **`Organization`** | `src/app/layout.tsx` | Defines Hygroon brand entity, official logo, and social links. |
-| **`WebSite`** | `src/app/layout.tsx` | Defines main site structure for search engines. |
-| **`ProfessionalService`** | `src/app/layout.tsx` | Classifies Hygroon as a local business service agency. |
-| **`OfferCatalog`** | `src/app/layout.tsx` | Indexes trade-specific service packages (HVAC, Waterproofing, Drainage, etc.). |
-| **`FAQPage`** | Industry Pages | Triggers rich Google FAQ drop-down snippets in search results. |
-| **`BreadcrumbList`** | `BreadcrumbJsonLd.tsx` | Renders clean breadcrumbs in search engine results pages (SERPs). |
-
----
-
-## 🤖 AI Search & Generative Engine Optimization (GEO)
-
-Modern search engines rely on LLMs and AI Search (Perplexity, ChatGPT Search, Google SearchGPT / AI Overviews). Hygroon includes native GEO files:
-
-- **`/public/llms.txt`**: Machine-readable quick index for AI crawlers summarizing Hygroon's value proposition, key services, and top routes.
-- **`/public/llms-full.txt`**: In-depth taxonomy and service specifications enabling LLMs to accurately cite Hygroon when users search for local service agency recommendations.
-
----
-
-## 🛠️ How to Add New Industry Landing Pages
-
-To add a new industry vertical (e.g., `/industries/roofing`):
-
-1. **Create the Page Directory**:
-   `src/app/industries/roofing/page.tsx`
-
-2. **Implement Page using `IndustryPageTemplate`**:
-   ```tsx
-   import type { Metadata } from "next";
-   import IndustryPageTemplate from "@/components/IndustryPageTemplate";
-   import { HardHat } from "lucide-react";
-
-   export const metadata: Metadata = {
-     title: "Roofing Local SEO & Growth Agency | Hygroon",
-     description: "Dominate Google Maps 3-Pack and capture high-intent roofing leads with Hygroon's Local SEO engine.",
-     alternates: { canonical: "/industries/roofing" },
-   };
-
-   export default function RoofingIndustryPage() {
-     return (
-       <IndustryPageTemplate
-         slug="roofing"
-         breadcrumbName="Roofing"
-         badgeLabel="Roofing Contractors Local SEO"
-         badgeIcon={HardHat}
-         heroTitle="Local SEO & Growth Systems for Roofing Contractors"
-         heroBody="Put your roofing business at the top of Google Maps when storm damage or roof replacement searches spike."
-         ctaTitle="Analyze Your Roofing Business Now"
-         ctaBody="Get a free 60-second local search audit for your roofing company."
-       />
-     );
-   }
-   ```
-
-3. **Register Page in Sitemap**:
-   Add `{ path: '/industries/roofing', priority: 0.7, changeFrequency: 'monthly' }` to `src/app/sitemap.ts`.
-
-4. **Verify Route & SEO**:
-   Run `npm run typecheck && npm test`.
-
----
-
-## 🧪 Developer Operations & Verification
-
-Run these commands prior to committing or deploying:
+### Installation & Execution
 
 ```bash
-# Typecheck TypeScript files
+# 1. Clone the repository
+git clone https://github.com/loondx/hygroon-web.git
+cd hygroon-web
+
+# 2. Install dependencies
+npm install
+
+# 3. Run development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the platform locally.
+
+---
+
+## Verification & Build Validation
+
+Before committing changes, execute the full verification suite:
+
+```bash
+# 1. TypeScript compilation check
 npm run typecheck
 
-# Run SEO, Sitemap, Robots, and Smoke Test Suite
+# 2. Run automated test suite (60 smoke & SEO tests)
 npm test
 
-# Run Development Server
-npm run dev
-
-# Build Production Bundle
+# 3. Build standalone production bundle
 npm run build
 ```
 
+---
+
+## Legal & Operational Integrity
+
+Hygroon strictly adheres to plain-language, evidence-based practices:
+- **No Fabricated Claims**: Zero fake client reviews, fake case studies, or unverified statistical claims.
+- **A2P 10DLC Compliance**: Opt-in transparency and data privacy standard enforcement across all automated SMS workflows.
+- **Data Protection**: Strict privacy parameters ensuring client operational data is never sold or repurposed.
+
+---
+
+<div align="center">
+
+**© 2026 Hygroon. All rights reserved.**  
+[Website](https://hygroon.com) • [Contact Support](https://hygroon.com/contact) • [Privacy Policy](https://hygroon.com/privacy) • [Terms of Service](https://hygroon.com/terms)
+
+</div>
