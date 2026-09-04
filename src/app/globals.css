@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 38 92% 50%;
+    --primary-foreground: 222 47% 11%;
+    --primary-hover: 36 94% 45%;
+
+    --secondary: 222 47% 11%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --positive: 158 64% 52%;
+    --positive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 38 92% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222 47% 9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 38 92% 50%;
+    --primary-foreground: 222 47% 11%;
+    --primary-hover: 36 94% 45%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 20%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --positive: 158 64% 42%;
+    --positive-foreground: 210 40% 98%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 38 92% 50%;
+  }
+}
+
+body {
+  /* color/background intentionally omitted — layout.tsx sets them via Tailwind
+     classes (bg-[#090d16] text-slate-100) on <body>. An unlayered rule here
+     would beat those utility classes under CSS cascade-layer precedence
+     regardless of specificity, which is exactly what happened before this
+     comment existed: every section that relied on inheriting body's
+     background (rather than setting its own) silently rendered light-on-light. */
+  font-feature-settings: "rlig" 1, "calt" 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Glass & Glow utilities */
+.growth-glow {
+  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.25);
+}
+
+/* Film-grain texture — the difference between "flat dark rectangle" and a
+   surface with actual depth. Fixed so it doesn't repaint on scroll, extremely
+   low opacity so it reads as atmosphere, not noise. */
+.bg-grain {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Ambient hero glow — two soft, off-center radial washes (warm + cool) so the
+   dark background has light and atmosphere instead of being a flat rectangle. */
+.bg-hero-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background:
+    radial-gradient(60% 50% at 15% 10%, rgba(245, 158, 11, 0.16) 0%, transparent 60%),
+    radial-gradient(55% 45% at 90% 30%, rgba(56, 91, 168, 0.14) 0%, transparent 60%);
+}
+
+/* One huge, near-invisible ring bleeding across the whole hero — ties the
+   text column and the graph column into one composition instead of reading
+   as two separate boxes side by side. Echoes the graph's own distance rings
+   at a much larger scale so it feels intentional, not decorative filler. */
+.hero-motif {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  width: 1100px;
+  height: 1100px;
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+  border: 1px solid rgba(245, 158, 11, 0.06);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-motif::before {
+  content: '';
+  position: absolute;
+  inset: 90px;
+  border-radius: 9999px;
+  border: 1px solid rgba(245, 158, 11, 0.04);
+}
+
+/* Lighter, single-wash versions for the sections below the hero — alternating
+   corner and hue gives scrolling a sense of rhythm instead of one flat wall. */
+.bg-section-glow-a {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: radial-gradient(45% 60% at 85% 0%, rgba(245, 158, 11, 0.09) 0%, transparent 65%);
+}
+.bg-section-glow-b {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: radial-gradient(45% 60% at 10% 100%, rgba(56, 91, 168, 0.1) 0%, transparent 65%);
+}
+
+.growth-grid {
+  background-size: 32px 32px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* Hero graph entrance — center appears, lines draw, competitors follow.
+   One-shot on mount, ~1.4s total. Disabled entirely under reduced motion. */
+@keyframes graph-center-in {
+  from { opacity: 0; transform: scale(0.6); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes graph-line-in {
+  from { opacity: 0; stroke-dashoffset: 1; }
+  to { opacity: 1; stroke-dashoffset: 0; }
+}
+@keyframes graph-node-in {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fade-up-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .graph-center {
+    animation: graph-center-in 0.4s ease-out both;
+    transform-origin: center;
+  }
+  .graph-line {
+    animation: graph-line-in 0.5s ease-out both;
+    animation-delay: 0.3s;
+  }
+  .graph-node {
+    animation: graph-node-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  .fade-up-in {
+    animation: fade-up-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}
