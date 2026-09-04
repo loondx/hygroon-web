@@ -50,7 +50,7 @@ export default function DemandToBookedWork() {
               <span className="text-xs font-mono font-bold tracking-widest text-amber-400">
                 {outcome.num}
               </span>
-              <span className="text-[11px] font-mono uppercase tracking-wider text-slate-500">
+              <span className="text-[11px] font-mono uppercase tracking-wider text-slate-400">
                 {outcome.subtitle}
               </span>
             </div>
@@ -71,7 +71,7 @@ export default function DemandToBookedWork() {
                   <span className="text-xs font-mono font-bold tracking-widest text-amber-400">
                     {outcome.num}
                   </span>
-                  <span className="text-[10px] font-mono uppercase tracking-wider text-slate-500">
+                  <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400">
                     {outcome.subtitle}
                   </span>
                 </div>

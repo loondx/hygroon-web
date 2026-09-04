@@ -140,12 +140,12 @@ export default function JourneyLeak() {
                   <div className="mt-2.5 space-y-0.5">
                     <span
                       className={`text-[10px] font-mono font-bold tracking-widest block ${
-                        isLeak ? 'text-rose-400' : 'text-amber-400'
+                        isLeak ? 'text-rose-300' : 'text-amber-400'
                       }`}
                     >
                       {node.stepNum}
                     </span>
-                    <h4
+                    <p
                       className={`text-xs font-bold transition-colors leading-tight ${
                         isActive
                           ? 'text-white font-extrabold'
@@ -155,7 +155,7 @@ export default function JourneyLeak() {
                       }`}
                     >
                       {node.label}
-                    </h4>
+                    </p>
                   </div>
                 </button>
               );
@@ -265,9 +265,9 @@ export default function JourneyLeak() {
                         </span>
                       )}
                     </div>
-                    <h4 className="text-sm font-bold text-white leading-tight">
+                    <p className="text-sm font-bold text-white leading-tight">
                       {node.label}
-                    </h4>
+                    </p>
                   </div>
                 </div>
 
