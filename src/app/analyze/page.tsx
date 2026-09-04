@@ -305,7 +305,7 @@ function AnalyzePageInner() {
       const { reportToken }: { reportToken: string | null } = await res.json();
       if (reportToken) {
         try {
-          localStorage.setItem('servnexa_user_email', email.trim());
+          localStorage.setItem('hygroon_user_email', email.trim());
         } catch {}
         saveLastAnalysis({
           reportToken,

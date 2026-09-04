@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: process.env.SERVNEXA_INTERNAL_API_URL || 'http://localhost:3001/api/:path*',
+        destination: process.env.HYGROON_INTERNAL_API_URL || 'http://localhost:3001/api/:path*',
       },
     ];
   },

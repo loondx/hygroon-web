@@ -1,14 +1,14 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { brandConfig } from '@servnexa/brand';
-import { SUPPORTED_MARKETS } from '@servnexa/config';
+import { brandConfig } from '../shared/brand/index.ts';
+import { SUPPORTED_MARKETS } from '../shared/config/index.ts';
 
-describe('Servnexa Public Web Smoke Tests', () => {
+describe('Hygroon Public Web Smoke Tests', () => {
   it('should load brand metadata correctly', () => {
-    assert.equal(brandConfig.name, 'Servnexa');
+    assert.equal(brandConfig.name, 'Hygroon');
     assert.equal(brandConfig.tagline, 'Growth Systems for Service Businesses');
-    assert.equal(brandConfig.subBrands.growth, 'Servnexa Growth');
-    assert.equal(brandConfig.subBrands.diagnostic, 'Servnexa Diagnostic');
+    assert.equal(brandConfig.subBrands.growth, 'Hygroon Growth');
+    assert.equal(brandConfig.subBrands.diagnostic, 'Hygroon Diagnostic');
   });
 
   it('should support multi-market diagnostic routing for OM, AE, KW', () => {

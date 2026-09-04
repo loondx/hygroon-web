@@ -65,7 +65,7 @@ const FALLBACK_PROPOSAL: ProposalData = {
   monthlyRetainer: 450,
   setupFee: 750,
   durationMonths: 6,
-  executiveSummary: 'Comprehensive deployment of the Servnexa revenue engine: converting inbound search traffic across Muscat into booked maintenance and replacement contracts.',
+  executiveSummary: 'Comprehensive deployment of the Hygroon revenue engine: converting inbound search traffic across Muscat into booked maintenance and replacement contracts.',
   currentBottlenecks: [
     '62% of incoming phone calls during field jobs go to voicemail without instant SMS recovery',
     'Website conversion is currently ~1.1% due to lack of 1-tap WhatsApp triage and trust proofs',

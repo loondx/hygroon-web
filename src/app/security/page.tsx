@@ -32,7 +32,7 @@ export default function SecurityPage() {
             Security & Data Protection
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            We hold ourselves to rigorous enterprise standards. Learn how Servnexa safeguards your client data, business credentials, and communications.
+            We hold ourselves to rigorous enterprise standards. Learn how Hygroon safeguards your client data, business credentials, and communications.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function SecurityPage() {
               <h2 className="text-lg font-bold text-white">1. Complete Data Ownership & Privacy</h2>
             </div>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Your customer data, quote histories, phone logs, and lead records belong exclusively to you. Servnexa never sells, rents, aggregates, or monetizes client data to third parties. If you choose to conclude an engagement, you can export your entire dataset in standard formats at any time.
+              Your customer data, quote histories, phone logs, and lead records belong exclusively to you. Hygroon never sells, rents, aggregates, or monetizes client data to third parties. If you choose to conclude an engagement, you can export your entire dataset in standard formats at any time.
             </p>
           </div>
 
@@ -73,7 +73,7 @@ export default function SecurityPage() {
               <h2 className="text-lg font-bold text-white">3. Payment & Invoicing Security</h2>
             </div>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              All payment transactions, retainer subscriptions, and deposit collection are processed via Stripe (PCI Service Provider Level 1 certified). Servnexa servers never see, store, or transmit raw credit card numbers or banking secrets.
+              All payment transactions, retainer subscriptions, and deposit collection are processed via Stripe (PCI Service Provider Level 1 certified). Hygroon servers never see, store, or transmit raw credit card numbers or banking secrets.
             </p>
           </div>
 
@@ -125,7 +125,7 @@ export default function SecurityPage() {
                 </div>
                 <div className="p-3 rounded-lg bg-black/40 border border-slate-800">
                   <strong className="text-amber-400 block mb-1">Application Sandbox</strong>
-                  All production containers run under unprivileged non-root users (`servnexa:1001`) with read-only root filesystems where applicable.
+                  All production containers run under unprivileged non-root users (`hygroon:1001`) with read-only root filesystems where applicable.
                 </div>
               </div>
             </div>

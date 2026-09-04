@@ -9,8 +9,8 @@
 // nothing, and also builds a mailto: fallback for when the request can't
 // reach the API (see buildGrowthCallMailto).
 
-const ATTRIBUTION_KEY = 'servnexa_attribution';
-const LAST_ANALYSIS_KEY = 'servnexa_last_analysis';
+const ATTRIBUTION_KEY = 'hygroon_attribution';
+const LAST_ANALYSIS_KEY = 'hygroon_last_analysis';
 
 const UTM_PARAMS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'] as const;
 type UtmParam = (typeof UTM_PARAMS)[number];
@@ -89,7 +89,7 @@ export function buildGrowthCallMailto(params: { salesEmail: string; sourcePage: 
   const subject = lastAnalysis ? `Growth call request: ${lastAnalysis.businessName}` : 'Growth call request';
 
   const lines = [
-    'Hi Servnexa team,',
+    'Hi Hygroon team,',
     '',
     "I'd like to book a growth call to review my customer journey.",
     '',

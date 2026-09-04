@@ -14,29 +14,25 @@ export const metadata: Metadata = {
   metadataBase: new URL(brandConfig.website),
   title: {
     default: `${brandConfig.name}: ${brandConfig.tagline}`,
-    // Every child page sets a plain string title (e.g. 'Contact') and gets
-    // this suffix automatically — see e.g. src/app/contact/page.tsx.
     template: `%s | ${brandConfig.name}`,
   },
   description: `${brandConfig.valueProposition} ${brandConfig.supportingCopy}`,
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   robots: {
     index: true,
     follow: true,
   },
   icons: {
-    // logo.svg is the only real icon asset that exists — a literal
-    // /favicon.ico reference here 404s (no such file in public/).
-    icon: '/logo.svg',
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
   },
-  // Env-driven so no verification token is hardcoded into a reusable source
-  // file — unset until GSC/Bing Webmaster Tools properties actually exist.
   verification: {
     google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
     other: process.env.NEXT_PUBLIC_BING_VERIFICATION
-      ? { 'msvalidate.01': process.env.NEXT_PUBLIC_BING_VERIFICATION }
+      ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION }
       : undefined,
   },
   openGraph: {
@@ -44,16 +40,22 @@ export const metadata: Metadata = {
     description: brandConfig.valueProposition,
     url: brandConfig.website,
     siteName: brandConfig.name,
-    type: 'website',
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: `${brandConfig.name} - ${brandConfig.tagline}`,
+      },
+    ],
   },
-  // No dedicated 1200x630 OG image asset exists yet (see the SEO audit
-  // report) — 'summary' doesn't require one; upgrading to
-  // 'summary_large_image' needs a real image added to openGraph.images
-  // first, not a fabricated one.
   twitter: {
-    card: 'summary',
+    card: "summary_large_image",
     title: `${brandConfig.name}: ${brandConfig.tagline}`,
     description: brandConfig.valueProposition,
+    images: ["/og-image.png"],
   },
 };
 

@@ -27,7 +27,7 @@ export default function IndustriesPage() {
             Industries Built for High-Intent Demand
           </h1>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-            Servnexa systems are specifically engineered for service businesses where fast enquiry capture and local competitive prominence drive high-value contracts.
+            Hygroon systems are specifically engineered for service businesses where fast enquiry capture and local competitive prominence drive high-value contracts.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function IndustriesPage() {
         <div className="p-8 sm:p-12 rounded-2xl bg-gradient-to-r from-amber-500/10 via-slate-900 to-amber-500/10 border border-amber-500/20 text-center space-y-4">
           <h3 className="text-2xl font-bold text-white">Don&apos;t see your exact trade listed?</h3>
           <p className="text-sm text-slate-300 max-w-xl mx-auto">
-            Servnexa adapts to any trade where emergency response, Google Maps prominence, and structured quotes win local customer trust.
+            Hygroon adapts to any trade where emergency response, Google Maps prominence, and structured quotes win local customer trust.
           </p>
           <div className="pt-2">
             <Link

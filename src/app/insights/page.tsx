@@ -8,7 +8,7 @@ import { BookOpen, ArrowRight, Sparkles, Clock } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Insights',
   description:
-    'Servnexa publishes market research once it has a real audit sample to draw on. No invented statistics, no articles that don’t exist yet.',
+    'Hygroon publishes market research once it has a real audit sample to draw on. No invented statistics, no articles that don’t exist yet.',
   alternates: { canonical: '/insights' },
 };
 
@@ -33,7 +33,7 @@ export default function InsightsPage() {
         <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">Research Worth Publishing Takes Time.</h1>
 
         <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-          This page will hold real market benchmarks once Servnexa has a large enough audit sample to draw honest
+          This page will hold real market benchmarks once Hygroon has a large enough audit sample to draw honest
           conclusions from, not invented statistics. Every number published here will be sourced and dated.
         </p>
 

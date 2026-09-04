@@ -1,5 +1,5 @@
 /**
- * @servnexa/ui
+ * @hygroon/ui
  * Design tokens and theme constants.
  */
 

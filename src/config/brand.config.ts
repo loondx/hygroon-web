@@ -1,5 +1,5 @@
-import { brandConfig, getLegalAttribution, type ServnexaBrandConfig } from '@servnexa/brand';
-import { SUPPORTED_MARKETS, INDUSTRY_GROUPS } from '@servnexa/config';
+import { brandConfig, getLegalAttribution, type HygroonBrandConfig } from '../shared/brand/index.ts';
+import { SUPPORTED_MARKETS, INDUSTRY_GROUPS } from '../shared/config/index.ts';
 
 export const brand = {
   ...brandConfig,
@@ -8,4 +8,4 @@ export const brand = {
 };
 
 export { brandConfig, getLegalAttribution, SUPPORTED_MARKETS, INDUSTRY_GROUPS };
-export type { ServnexaBrandConfig };
+export type { HygroonBrandConfig };

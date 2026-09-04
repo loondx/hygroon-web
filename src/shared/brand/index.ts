@@ -1,9 +1,9 @@
 /**
- * @servnexa/brand
+ * @hygroon/brand
  * Central brand configuration, philosophy, messaging, and identity assets.
  */
 
-export interface ServnexaBrandConfig {
+export interface HygroonBrandConfig {
   name: string;
   pronunciation: string;
   tagline: string;
@@ -42,8 +42,8 @@ function getEnv(key: string): string | undefined {
   return undefined;
 }
 
-export const brandConfig: ServnexaBrandConfig = {
-  name: 'Servnexa',
+export const brandConfig: HygroonBrandConfig = {
+  name: 'Hygroon',
   pronunciation: 'Serv-Nex-A',
   tagline: 'Growth Systems for Service Businesses',
   valueProposition: 'Turn More Demand Into Revenue.',
@@ -51,23 +51,23 @@ export const brandConfig: ServnexaBrandConfig = {
   supportingCopy: "We show where you're losing local demand, and what to fix first.",
   primaryCTA: 'Analyze My Business',
   secondaryCTA: 'See Sample',
-  website: getEnv('SERVNEXA_WEBSITE_URL') || 'https://servnexa.com',
-  consoleUrl: getEnv('SERVNEXA_CONSOLE_URL') || 'https://app.servnexa.com',
-  apiUrl: getEnv('SERVNEXA_API_URL') || 'https://api.servnexa.com',
-  supportEmail: 'support@servnexa.com',
-  salesEmail: 'growth@servnexa.com',
-  billingEmail: 'billing@servnexa.com',
-  securityEmail: 'security@servnexa.com',
-  legalEntity: getEnv('SERVNEXA_LEGAL_ENTITY'),
+  website: getEnv('HYGROON_WEBSITE_URL') || 'https://hygroon.com',
+  consoleUrl: getEnv('HYGROON_CONSOLE_URL') || 'https://app.hygroon.com',
+  apiUrl: getEnv('HYGROON_API_URL') || 'https://api.hygroon.com',
+  supportEmail: 'support@hygroon.com',
+  salesEmail: 'growth@hygroon.com',
+  billingEmail: 'billing@hygroon.com',
+  securityEmail: 'security@hygroon.com',
+  legalEntity: getEnv('HYGROON_LEGAL_ENTITY'),
   socials: {
-    linkedin: 'https://linkedin.com/company/servnexa',
+    linkedin: 'https://linkedin.com/company/hygroon',
   },
   subBrands: {
-    growth: 'Servnexa Growth',
-    os: 'Servnexa OS',
-    radar: 'Servnexa Radar',
-    diagnostic: 'Servnexa Diagnostic',
-    insights: 'Servnexa Insights',
+    growth: 'Hygroon Growth',
+    os: 'Hygroon OS',
+    radar: 'Hygroon Radar',
+    diagnostic: 'Hygroon Diagnostic',
+    insights: 'Hygroon Insights',
   },
 };
 
@@ -76,7 +76,7 @@ export const brandConfig: ServnexaBrandConfig = {
  */
 export function getLegalAttribution(): string | null {
   if (brandConfig.legalEntity && brandConfig.legalEntity.trim().length > 0) {
-    return `Servnexa is a trading brand of ${brandConfig.legalEntity}.`;
+    return `Hygroon is a trading brand of ${brandConfig.legalEntity}.`;
   }
   return null;
 }

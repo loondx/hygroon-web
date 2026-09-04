@@ -26,7 +26,7 @@ export default function AboutPage() {
             Growth Systems Built on Market Truth
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            We started Servnexa because traditional marketing agencies sell vanity clicks while service businesses struggle with unclosed estimates and lost emergency calls.
+            We started Hygroon because traditional marketing agencies sell vanity clicks while service businesses struggle with unclosed estimates and lost emergency calls.
           </p>
         </div>
 
@@ -38,7 +38,7 @@ export default function AboutPage() {
               A service business does not win by spending more on ads than its competitors. It wins by answering faster, establishing overwhelming local reputation, and delivering structured proposals that make customer decisions effortless.
             </p>
             <p>
-              Every tool we build inside <strong>Servnexa OS</strong> is designed to remove friction between a customer having an urgent service need and your team completing the work.
+              Every tool we build inside <strong>Hygroon OS</strong> is designed to remove friction between a customer having an urgent service need and your team completing the work.
             </p>
           </div>
         </div>

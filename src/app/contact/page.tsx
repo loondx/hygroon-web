@@ -32,7 +32,7 @@ const REASONS = [
   {
     title: 'Ask About an Analysis',
     icon: ClipboardList,
-    desc: 'You have a question about a Servnexa analysis you ran, or want help reading your findings.',
+    desc: 'You have a question about a Hygroon analysis you ran, or want help reading your findings.',
     subject: 'Question about my analysis',
     source: 'contact_ask_analysis',
     salesConnected: false,
@@ -54,7 +54,7 @@ export default function ContactPage() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Header */}
         <div className="text-center space-y-4">
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">Contact Servnexa</h1>
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">Contact Hygroon</h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
             Tell us why you&apos;re reaching out and we&apos;ll route it to the right person.
           </p>

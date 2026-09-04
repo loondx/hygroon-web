@@ -48,7 +48,7 @@ describe('sitemap.ts', () => {
 
   it('includes the homepage and the analyze flow', () => {
     const urls = sitemap().map((e) => e.url);
-    assert.ok(urls.includes('https://servnexa.com'));
+    assert.ok(urls.includes('https://hygroon.com'));
     assert.ok(urls.some((u) => u.endsWith('/analyze')));
   });
 
@@ -57,7 +57,7 @@ describe('sitemap.ts', () => {
     for (const industry of PUBLIC_INDUSTRIES) {
       if (!industry.hasPage) continue;
       assert.ok(
-        urls.includes(`https://servnexa.com/industries/${industry.slug}`),
+        urls.includes(`https://hygroon.com/industries/${industry.slug}`),
         `sitemap is missing /industries/${industry.slug}`,
       );
     }
@@ -71,7 +71,7 @@ describe('sitemap.ts', () => {
 
   it('every listed URL has a real page.tsx behind it', () => {
     for (const entry of sitemap()) {
-      const path = entry.url.replace('https://servnexa.com', '');
+      const path = entry.url.replace('https://hygroon.com', '');
       assert.ok(existsSync(pageFileFor(path)), `${entry.url} has no page.tsx at ${pageFileFor(path)}`);
     }
   });

@@ -27,6 +27,21 @@
       "@/*": [
         "./src/*"
       ],
+      "@hygroon/brand": [
+        "./src/shared/brand/index.ts"
+      ],
+      "@hygroon/config": [
+        "./src/shared/config/index.ts"
+      ],
+      "@hygroon/types": [
+        "./src/shared/types/index.ts"
+      ],
+      "@hygroon/validation": [
+        "./src/shared/validation/index.ts"
+      ],
+      "@hygroon/ui": [
+        "./src/shared/ui/index.ts"
+      ],
       "@servnexa/brand": [
         "./src/shared/brand/index.ts"
       ],

@@ -133,7 +133,7 @@ export default function PublicReportPage() {
 
   useEffect(() => {
     try {
-      const savedEmail = localStorage.getItem('servnexa_user_email');
+      const savedEmail = localStorage.getItem('hygroon_user_email');
       if (savedEmail) setOwnerEmail(savedEmail);
     } catch {}
   }, []);
@@ -156,7 +156,7 @@ export default function PublicReportPage() {
     const url = window.location.href;
     if (navigator.share) {
       try {
-        await navigator.share({ title: report?.title ?? 'Servnexa Report', url });
+        await navigator.share({ title: report?.title ?? 'Hygroon Report', url });
         return;
       } catch {
         // fall through to copy
@@ -273,7 +273,7 @@ export default function PublicReportPage() {
               S
             </div>
             <div>
-              <span className="text-xl font-extrabold tracking-tight text-slate-900 block leading-tight">Servnexa</span>
+              <span className="text-xl font-extrabold tracking-tight text-slate-900 block leading-tight">Hygroon</span>
               <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">Business Opportunity Snapshot</span>
             </div>
           </div>
@@ -382,7 +382,7 @@ export default function PublicReportPage() {
           <div className="pt-2 text-xs font-mono font-bold text-amber-800 flex items-center justify-center gap-4">
             <span>✉️ {brandConfig.salesEmail}</span>
             <span>&bull;</span>
-            <span>🔗 servnexa.com/reports/{token}</span>
+            <span>🔗 hygroon.com/reports/{token}</span>
           </div>
         </div>
       </div>

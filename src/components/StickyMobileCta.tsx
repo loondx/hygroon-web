@@ -7,7 +7,7 @@ import { shouldHideStickyCta, computeStickyCtaVisible } from '@/lib/stickyCta';
 import AnalyzeCta from './AnalyzeCta';
 import GrowthCallCta from './GrowthCallCta';
 
-const DISMISS_KEY = 'servnexa_sticky_cta_dismissed';
+const DISMISS_KEY = 'hygroon_sticky_cta_dismissed';
 
 /** Compact bottom action bar for mobile only, shown once the hero's own CTA
  * has scrolled out of view. Hidden entirely on pages already mid-flow (the

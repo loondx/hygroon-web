@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 // See robots.ts for why this imports the workspace package directly.
-import { brandConfig } from '@servnexa/brand';
+import { brandConfig } from '../shared/brand/index.ts';
 
 // Static public routes only — no token routes (/reports, /proposals,
 // /onboarding), no generated per-business URLs. New pages must be added here

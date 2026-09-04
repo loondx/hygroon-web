@@ -100,7 +100,7 @@ export default function HvacIndustryPage() {
           ],
         },
         {
-          title: 'What Servnexa Looks At',
+          title: 'What Hygroon Looks At',
           body: 'Our diagnostic evaluates your complete customer growth path: local search prominence, mobile response speed, review recency, missed call handling, and quote follow-up workflows.',
         },
       ]}

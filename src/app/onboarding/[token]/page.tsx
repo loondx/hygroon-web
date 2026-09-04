@@ -503,7 +503,7 @@ export default function OnboardingPage() {
                 <div>
                   <div className="text-sm font-bold text-white">Google Business Profile Delegation</div>
                   <div className="text-xs text-slate-400 mt-0.5">
-                    Add <code className="text-amber-400 bg-slate-900 px-1.5 py-0.5 rounded">ops@servnexa.com</code> as a Manager on Google Business Profile.
+                    Add <code className="text-amber-400 bg-slate-900 px-1.5 py-0.5 rounded">ops@hygroon.com</code> as a Manager on Google Business Profile.
                   </div>
                 </div>
                 <input

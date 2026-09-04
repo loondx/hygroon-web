@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next';
 // brand.config' wrapper every other app file uses) so this stays importable
 // by the plain node:test runner, which doesn't resolve tsconfig path
 // aliases — see seo.spec.ts.
-import { brandConfig } from '@servnexa/brand';
+import { brandConfig } from '../shared/brand/index.ts';
 
 // Token-gated routes carry real business/contact data and must never be
 // crawlable — see the sibling noindex layouts under reports/proposals/

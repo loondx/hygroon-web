@@ -32,7 +32,7 @@ export default function GrowthReviewPage() {
   useEffect(() => {
     setContext(getLastAnalysis());
     try {
-      const savedEmail = localStorage.getItem('servnexa_user_email');
+      const savedEmail = localStorage.getItem('hygroon_user_email');
       if (savedEmail) setEmail(savedEmail);
     } catch {
       // ignore
