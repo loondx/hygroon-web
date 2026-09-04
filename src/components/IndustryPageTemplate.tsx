@@ -35,7 +35,7 @@ export interface IndustryPageTemplateProps {
   ctaBody: string;
 }
 
-// Shared shell for every /industries/<slug> landing page — content (pillars,
+// Shared shell for every /industries/<slug> landing page: content (pillars,
 // sections, copy) is genuinely different per industry.
 export default function IndustryPageTemplate({
   slug,

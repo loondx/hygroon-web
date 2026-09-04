@@ -37,7 +37,7 @@ export default function Footer() {
             <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-200">Product</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/#how-it-works" className="hover:text-white transition-colors">
+                <Link href="/how-it-works" className="hover:text-white transition-colors">
                   How It Works
                 </Link>
               </li>
@@ -91,12 +91,12 @@ export default function Footer() {
             <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-200">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/security" className="hover:text-white transition-colors">
+                <Link href="/privacy" className="hover:text-white transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/security" className="hover:text-white transition-colors">
+                <Link href="/terms" className="hover:text-white transition-colors">
                   Terms of Service
                 </Link>
               </li>
@@ -140,10 +140,10 @@ export default function Footer() {
             {legalAttribution && <span className="ml-2">{legalAttribution}</span>}
           </div>
           <div className="flex items-center gap-6">
-            <Link href="/security" className="hover:text-slate-300 transition-colors">
+            <Link href="/privacy" className="hover:text-slate-300 transition-colors">
               Privacy
             </Link>
-            <Link href="/security" className="hover:text-slate-300 transition-colors">
+            <Link href="/terms" className="hover:text-slate-300 transition-colors">
               Terms
             </Link>
             <Link href="/contact" className="hover:text-slate-300 transition-colors">

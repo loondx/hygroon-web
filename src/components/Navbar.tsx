@@ -33,9 +33,9 @@ export default function Navbar() {
           <Link href="/industries" className="hover:text-white transition-colors">
             Industries
           </Link>
-          <a href="/#how-it-works" className="hover:text-white transition-colors">
+          <Link href="/how-it-works" className="hover:text-white transition-colors">
             How It Works
-          </a>
+          </Link>
           <Link href="/insights" className="hover:text-white transition-colors">
             Insights
           </Link>
@@ -80,13 +80,13 @@ export default function Navbar() {
             >
               Industries
             </Link>
-            <a
-              href="/#how-it-works"
+            <Link
+              href="/how-it-works"
               onClick={() => setMobileMenuOpen(false)}
               className="px-3 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800/60"
             >
               How It Works
-            </a>
+            </Link>
             <Link
               href="/insights"
               onClick={() => setMobileMenuOpen(false)}

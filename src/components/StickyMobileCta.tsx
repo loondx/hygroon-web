@@ -14,7 +14,7 @@ const DISMISS_KEY = 'hygroon_sticky_cta_dismissed';
  * funnel itself, the gated report, proposal acceptance, onboarding) where a
  * second competing CTA would be noise, hidden again near the bottom of any
  * page so it never covers the footer's real links, and dismissible for the
- * rest of the browsing session if the visitor closes it — see
+ * rest of the browsing session if the visitor closes it: see
  * computeStickyCtaVisible. */
 export default function StickyMobileCta() {
   const pathname = usePathname();

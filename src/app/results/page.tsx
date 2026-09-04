@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 };
 
 // This page used to show three "case studies" presented as real client
-// outcomes with fabricated names, cities, and revenue figures — a direct
-// violation of the no-fabricated-case-studies rule in CLAUDE.md. Replaced
+// outcomes with fabricated names, cities, and revenue figures: a direct
+// violation of the no-fabricated-case-studies rule. Replaced
 // with an honest empty state, matching how the rest of the site (the
 // homepage's sample market graph, the evidence preview, the diagnostic
 // report's "not yet available" screenshot slot) already handles data that

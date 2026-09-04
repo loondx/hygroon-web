@@ -58,6 +58,20 @@ export function getAttribution(): Attribution | null {
   }
 }
 
+/** Identifies if visitor arrived from an AI Search engine (ChatGPT, Perplexity, Claude, SearchGPT). */
+export function getAiSearchReferral(): string | null {
+  const attr = getAttribution();
+  if (!attr) return null;
+  const source = attr.utm_source?.toLowerCase() || '';
+  const ref = attr.referrer?.toLowerCase() || '';
+
+  if (source.includes('chatgpt') || ref.includes('chatgpt.com')) return 'ChatGPT';
+  if (source.includes('perplexity') || ref.includes('perplexity.ai')) return 'Perplexity';
+  if (source.includes('claude') || ref.includes('claude.ai')) return 'Claude';
+  if (source.includes('searchgpt')) return 'SearchGPT';
+  return null;
+}
+
 /** Called once /analyze delivers a real report, so a later "Book a Growth
  * Call" click elsewhere on the site can reference it instead of asking the
  * visitor to re-enter what we already know. */

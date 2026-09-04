@@ -44,7 +44,7 @@ function getEnv(key: string): string | undefined {
 
 export const brandConfig: HygroonBrandConfig = {
   name: 'Hygroon',
-  pronunciation: 'Serv-Nex-A',
+  pronunciation: 'Hi-Groon',
   tagline: 'Growth Systems for Service Businesses',
   valueProposition: 'Turn More Demand Into Revenue.',
   competitiveHeadline: 'See Why Competitors Get The Job.',

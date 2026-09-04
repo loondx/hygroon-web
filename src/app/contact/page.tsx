@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const REASON_CARD_CLASSES = 'text-xs font-bold text-amber-400 hover:underline flex items-center gap-1';
 
-// "Discuss Growth" is a real sales enquiry — it goes through the same
+// "Discuss Growth" is a real sales enquiry: it goes through the same
 // consultation-request pipeline as "Book a Growth Call" (Business/Contact/
 // Activity), not a disconnected mailto. The other two are non-sales
 // (support-ish or genuinely "other") and deliberately stay plain mailto:

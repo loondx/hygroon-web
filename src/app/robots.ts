@@ -9,12 +9,51 @@ import { brandConfig } from '../shared/brand/index.ts';
 // crawlable — see the sibling noindex layouts under reports/proposals/
 // onboarding for the meta-level enforcement of the same rule.
 export default function robots(): MetadataRoute.Robots {
+  const privateDisallows = ['/reports/', '/proposals/', '/onboarding/', '/api/'];
+
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: ['/reports/', '/proposals/', '/onboarding/', '/api/'],
-    },
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: privateDisallows,
+      },
+      {
+        userAgent: 'Googlebot',
+        allow: '/',
+        disallow: privateDisallows,
+      },
+      {
+        userAgent: 'Bingbot',
+        allow: '/',
+        disallow: privateDisallows,
+      },
+      {
+        userAgent: 'OAI-SearchBot',
+        allow: '/',
+        disallow: privateDisallows,
+      },
+      {
+        userAgent: 'Claude-SearchBot',
+        allow: '/',
+        disallow: privateDisallows,
+      },
+      {
+        userAgent: 'Claude-User',
+        allow: '/',
+        disallow: privateDisallows,
+      },
+      {
+        userAgent: 'GPTBot',
+        allow: '/',
+        disallow: privateDisallows,
+      },
+      {
+        userAgent: 'ClaudeBot',
+        allow: '/',
+        disallow: privateDisallows,
+      },
+    ],
     sitemap: `${brandConfig.website}/sitemap.xml`,
   };
 }

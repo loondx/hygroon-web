@@ -37,6 +37,10 @@ export default function HomePage() {
             </span>
           </h1>
 
+          <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+            Hygroon is a growth system and diagnostic platform for U.S. home-service businesses, starting with HVAC contractors. We analyze local search visibility, mobile conversion, response speed, and quote follow-up to stop revenue leakage between initial lead search and booked jobs.
+          </p>
+
           <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-3.5">
             <AnalyzeCta source="hero_primary" />
             <GrowthCallCta source="hero_secondary" className={SECONDARY_BUTTON}>
