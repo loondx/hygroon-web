@@ -1,6 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" fill="none">
-  <rect width="40" height="40" rx="10" fill="#0F172A"/>
-  <path d="M12 28L20 12L28 28" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M15 23H25" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="20" cy="12" r="2.5" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="hygroon-gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle (Dark Slate #090D16) -->
+  <rect width="512" height="512" rx="128" fill="#090D16"/>
+  
+  <!-- Outer Shield & Map Pin Frame -->
+  <path 
+    d="M 160 180 L 160 290 L 256 420 L 352 290 L 352 180 L 300 180 L 300 250 L 256 310 L 212 250 L 212 180 Z" 
+    fill="url(#hygroon-gold-grad)" 
+  />
+  
+  <!-- Central Lightning Arrow (Speed to Lead & Upward Growth) -->
+  <path 
+    d="M 230 400 L 295 240 L 255 240 L 305 100 L 235 100 L 205 240 L 245 240 Z" 
+    fill="#FBBF24" 
+    stroke="#090D16" 
+    stroke-width="8" 
+    stroke-linejoin="round"
+  />
 </svg>

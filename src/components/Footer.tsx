@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { brandConfig, getLegalAttribution } from '@/config/brand.config';
-import { Compass, ShieldCheck, Mail, Linkedin } from 'lucide-react';
+import { ShieldCheck, Mail, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   const legalAttribution = getLegalAttribution();
@@ -13,8 +14,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 space-y-4 pr-4">
             <Link href="/" className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
-                <Compass className="w-4 h-4" />
+              <div className="w-8 h-8 rounded-lg border border-amber-500/30 bg-[#090d16] flex items-center justify-center overflow-hidden">
+                <Image
+                  src="/logo.png"
+                  alt="Hygroon Logo"
+                  width={32}
+                  height={32}
+                  className="object-cover w-full h-full"
+                />
               </div>
               <span className="font-bold text-lg tracking-tight text-white">{brandConfig.name}</span>
             </Link>

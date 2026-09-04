@@ -2,9 +2,10 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { brandConfig } from '@/config/brand.config';
 import { trackAnalyzeCtaClick } from '@/lib/analytics';
-import { Menu, X, ArrowRight, Compass } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,8 +14,17 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-slate-800/80 bg-[#090d16]/90 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group">
-          <Compass className="w-6 h-6 text-amber-400 transition-transform group-hover:rotate-12" strokeWidth={1.75} />
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="relative w-8 h-8 rounded-lg overflow-hidden border border-amber-500/30 bg-[#090d16] flex items-center justify-center transition-transform group-hover:scale-105">
+            <Image
+              src="/logo.png"
+              alt="Hygroon Logo"
+              width={32}
+              height={32}
+              className="object-cover w-full h-full"
+              priority
+            />
+          </div>
           <span className="font-bold text-xl tracking-[-0.01em] text-white">{brandConfig.name}</span>
         </Link>
 
@@ -117,4 +127,3 @@ export default function Navbar() {
     </header>
   );
 }
-
