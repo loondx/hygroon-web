@@ -18,13 +18,15 @@ export const metadata: Metadata = {
   },
   description: `${brandConfig.valueProposition} ${brandConfig.supportingCopy}`,
   keywords: [
+    "HVAC Local SEO Agency",
     "Service Business Growth",
     "Local Lead Capture",
-    "HVAC Marketing",
+    "HVAC Marketing Agency",
     "Emergency Call Recovery",
     "Service Business OS",
     "Google Maps Prominence",
     "Home Services Lead Generation",
+    "Speed to Lead SMS Recovery",
   ],
   authors: [{ name: "Hygroon", url: brandConfig.website }],
   creator: "Hygroon",
@@ -105,6 +107,67 @@ const websiteJsonLd = {
   url: brandConfig.website,
 };
 
+const professionalServiceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: brandConfig.name,
+  url: brandConfig.website,
+  logo: `${brandConfig.website}/logo.svg`,
+  image: `${brandConfig.website}/og-image.png`,
+  description: brandConfig.valueProposition,
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Home Service Growth Systems & Local SEO Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "HVAC Local SEO & Digital Marketing",
+          description:
+            "Google Maps 3-Pack optimization, high-intent HVAC search ranking, and speed-to-lead missed call textback for heating & cooling contractors.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Waterproofing & Foundation Growth Systems",
+          description:
+            "Local search visibility and lead recovery for basement waterproofing and foundation repair contractors.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Drainage & Wastewater Marketing",
+          description:
+            "Local search prominence and emergency call capture for drainage and wastewater specialists.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Water Restoration Growth Systems",
+          description:
+            "24/7 emergency water damage restoration lead capture and local search optimization.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Pest Control Local SEO",
+          description:
+            "Recurring contract growth and local Google Maps optimization for pest control businesses.",
+        },
+      },
+    ],
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -120,6 +183,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceJsonLd) }}
         />
         <div className="bg-grain" aria-hidden="true" />
         <AttributionCapture />

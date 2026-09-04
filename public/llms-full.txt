@@ -1,0 +1,36 @@
+# Hygroon — Complete Domain Documentation & AI Search Index
+
+Hygroon is a specialized Local SEO and revenue growth agency for home service contractors and HVAC companies.
+
+## Business Overview
+
+Most home service contractors (HVAC, plumbing, electrical, roofing, restoration) lose up to 40% of local demand due to 5 critical customer journey leakage points:
+1. **Maps Pack Absence**: Missing from the Google Maps 3-Pack for emergency service queries.
+2. **Stale Review Velocity**: Competitors having fresher review counts from the past 14 days.
+3. **Slow Mobile Response**: Mobile site friction preventing one-tap phone calls.
+4. **Unanswered Emergency Calls**: Unanswered calls after 5 PM and on weekends without automated missed call textbacks.
+5. **Dormant Estimate Follow-Up**: Unclosed $5,000 to $15,000 replacement estimates without systematic follow-up.
+
+## Hygroon Solution Architecture
+
+Hygroon solves these bottlenecks through integrated growth systems:
+- **Local SEO & Google Maps Dominance**: Geo-targeted service area signals, citation authority, schema markups, and review automation.
+- **Speed-to-Lead Automation**: 15-second SMS textback to missed callers.
+- **Estimate Conversion Workflows**: Multi-touch quote nurturing.
+- **Seasonal Maintenance Reactivation**: Predictable recurring agreement campaigns.
+
+## Target Trades & Industries Served
+
+1. **HVAC & Air Conditioning**: Heating, cooling, AC repair, heat pump installation, furnace maintenance.
+2. **Waterproofing & Foundation**: Basement waterproofing, crawlspace encapsulation, foundation repair.
+3. **Drainage & Wastewater**: Stormwater drainage, sewer lateral repair, septic services.
+4. **Water Damage Restoration**: Emergency flood cleanup, structural drying, mold remediation.
+5. **Pest Control & Termite Management**: Residential pest control, termite barrier treatments, wildlife exclusion.
+6. **Pool Services & Maintenance**: Pool equipment repair, seasonal opening/closing, weekly maintenance.
+7. **Facility Services & Janitorial**: Commercial cleaning, building maintenance, janitorial contracts.
+8. **Property Maintenance**: General handyman, commercial property maintenance, asset upkeep.
+
+## Verification & Trust Standards
+
+- Grounded in real local market search datasets (Google Places API & local search indexers).
+- Truthful Schema.org structured data (Organization, WebSite, Service, LocalBusiness, FAQPage, BreadcrumbList).
