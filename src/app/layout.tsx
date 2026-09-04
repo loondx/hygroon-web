@@ -98,22 +98,6 @@ const organizationJsonLd = {
   url: brandConfig.website,
   logo: `${brandConfig.website}/logo.svg`,
   sameAs: brandConfig.socials.linkedin ? [brandConfig.socials.linkedin] : [],
-};
-
-const websiteJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: brandConfig.name,
-  url: brandConfig.website,
-};
-
-const professionalServiceJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: brandConfig.name,
-  url: brandConfig.website,
-  logo: `${brandConfig.website}/logo.svg`,
-  image: `${brandConfig.website}/og-image.png`,
   description: brandConfig.valueProposition,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -123,7 +107,7 @@ const professionalServiceJsonLd = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "HVAC Local SEO & Digital Marketing",
+          name: "HVAC Local SEO & Growth Diagnostic",
           description:
             "Google Maps 3-Pack optimization, high-intent HVAC search ranking, and speed-to-lead missed call textback for heating & cooling contractors.",
         },
@@ -152,7 +136,7 @@ const professionalServiceJsonLd = {
           "@type": "Service",
           name: "Water Restoration Growth Systems",
           description:
-            "24/7 emergency water damage restoration lead capture and local search optimization.",
+            "Emergency water damage restoration lead capture and local search optimization.",
         },
       },
       {
@@ -166,6 +150,13 @@ const professionalServiceJsonLd = {
       },
     ],
   },
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: brandConfig.name,
+  url: brandConfig.website,
 };
 
 export default function RootLayout({
@@ -183,10 +174,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceJsonLd) }}
         />
         <div className="bg-grain" aria-hidden="true" />
         <AttributionCapture />

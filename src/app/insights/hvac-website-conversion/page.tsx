@@ -5,12 +5,12 @@ import { brandConfig } from '@/config/brand.config';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import AnalyzeCta from '@/components/AnalyzeCta';
 import GrowthCallCta from '@/components/GrowthCallCta';
-import { MonitorSmartphone, ShieldCheck, ArrowRight } from 'lucide-react';
+import { MonitorSmartphone, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Optimizing HVAC Mobile Websites for Emergency One-Tap Conversion | Hygroon',
   description:
-    'Learn how sub-second mobile page load speed, prominent tap-to-call buttons, and trust badges double mobile website conversion for HVAC contractors.',
+    'Learn how mobile site performance, single-tap call buttons, and trust indicators help U.S. HVAC contractors convert mobile search traffic into dispatch calls.',
   alternates: { canonical: '/insights/hvac-website-conversion' },
   openGraph: {
     title: 'Optimizing HVAC Mobile Websites for Emergency One-Tap Conversion',
@@ -67,44 +67,44 @@ export default function HvacWebsiteConversionPage() {
             Optimizing HVAC Mobile Websites for Emergency Conversion
           </h1>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-            Over 85% of emergency HVAC service searches happen on mobile devices. Here is how mobile UX friction reduces booked dispatch jobs.
+            A majority of emergency service inquiries originate on smartphones. Here is how mobile UX friction reduces booked dispatch jobs.
           </p>
         </header>
 
         <div className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 space-y-6 text-sm text-slate-300 leading-relaxed">
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-white">The Mobile Distress Mindset</h2>
+            <h2 className="text-xl font-bold text-white">The Mobile Search Mindset</h2>
             <p>
-              When a homeowner experiences an equipment breakdown, they are holding a smartphone in one hand while standing near a malfunctioning unit. They are not looking to read long paragraphs or navigate multi-level drop-down menus. They want immediate answers:
+              When a homeowner experiences an equipment failure, they typically use a smartphone to find help. Distressed callers look for rapid confirmation rather than long-form content or complex navigation:
             </p>
             <ul className="list-disc pl-5 space-y-1.5 text-slate-400">
-              <li>Are you located in my service area?</li>
-              <li>Are you licensed, insured, and reputable?</li>
-              <li>Can I reach a live technician right now?</li>
+              <li>Is this business active in my immediate service area?</li>
+              <li>Are they properly licensed, insured, and verified?</li>
+              <li>Can I connect with dispatch or request service immediately?</li>
             </ul>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-white">3 Crucial Mobile Conversion Pillars</h2>
+            <h2 className="text-xl font-bold text-white">Essential Mobile Conversion Elements</h2>
             <div className="space-y-4">
               <div className="p-4 rounded-xl bg-[#0d1322] border border-slate-800 space-y-1">
-                <h3 className="font-bold text-white text-base">1. Sticky One-Tap Click-to-Call</h3>
+                <h3 className="font-bold text-white text-base">1. Accessible Click-to-Call Placement</h3>
                 <p className="text-xs text-slate-400">
-                  A persistent phone button fixed at the bottom of the mobile viewport ensures homeowners can initiate a phone call from anywhere on the page without scrolling.
+                  A prominent phone button fixed in the mobile viewport allows visitors to initiate calls immediately without excessive scrolling.
                 </p>
               </div>
 
               <div className="p-4 rounded-xl bg-[#0d1322] border border-slate-800 space-y-1">
-                <h3 className="font-bold text-white text-base">2. Sub-Second Page Speed & Core Web Vitals</h3>
+                <h3 className="font-bold text-white text-base">2. Fast Mobile Page Performance</h3>
                 <p className="text-xs text-slate-400">
-                  Every 1-second delay in mobile page load reduces conversion rates by 7%. Hygroon optimizes image sizes, CSS delivery, and server rendering for maximum speed.
+                  Slower page load speeds increase bounce rates on mobile networks. Optimizing assets and script execution helps preserve visitor retention.
                 </p>
               </div>
 
               <div className="p-4 rounded-xl bg-[#0d1322] border border-slate-800 space-y-1">
-                <h3 className="font-bold text-white text-base">3. Instant License & Upfront Fee Assurance</h3>
+                <h3 className="font-bold text-white text-base">3. Clear Credentials and Trust Signals</h3>
                 <p className="text-xs text-slate-400">
-                  Displaying state HVAC license numbers, background-checked badge icons, and upfront dispatch pricing builds instant caller trust.
+                  Displaying state HVAC licensing info, insurance verification, and recent review highlights builds immediate caller confidence.
                 </p>
               </div>
             </div>

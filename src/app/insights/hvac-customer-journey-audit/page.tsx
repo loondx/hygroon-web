@@ -5,7 +5,7 @@ import { brandConfig } from '@/config/brand.config';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import AnalyzeCta from '@/components/AnalyzeCta';
 import GrowthCallCta from '@/components/GrowthCallCta';
-import { Compass, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Compass, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'The HVAC Customer Journey Audit Guide | Hygroon',
@@ -75,10 +75,10 @@ export default function HvacCustomerJourneyAuditPage() {
           <section className="space-y-3">
             <h2 className="text-xl font-bold text-white">Why Audit the Complete Journey?</h2>
             <p>
-              Most HVAC contractors only look at individual pieces of marketing: a Google Ads campaign, a website redesign, or an SEO invoice. However, revenue leakage happens in the white space between these touchpoints.
+              Many contractors evaluate individual marketing channels in isolation (such as ad campaigns or website design). However, demand leakage typically occurs at the hand-off points between discovery, intake, and scheduling.
             </p>
             <p>
-              Auditing the complete customer journey exposes exactly where interested homeowners drop off before booking a service technician.
+              Auditing the complete customer journey identifies specific drop-off points before revenue is lost.
             </p>
           </section>
 
@@ -86,37 +86,37 @@ export default function HvacCustomerJourneyAuditPage() {
             <h2 className="text-xl font-bold text-white">5 Steps to Audit Your Business</h2>
             <div className="space-y-4">
               <div className="p-4 rounded-xl bg-[#0d1322] border border-slate-800 space-y-1">
-                <h3 className="font-bold text-white text-base">Step 1: Check Google Maps 3-Pack Rank</h3>
+                <h3 className="font-bold text-white text-base">Step 1: Inspect Google Maps Local Visibility</h3>
                 <p className="text-xs text-slate-400">
-                  Search &quot;AC repair [Your City]&quot; on a mobile phone without logged-in account bias. Are you in the top 3 map results? Is your review velocity steady?
+                  Search local emergency terms on a mobile device without account bias. Verify your map placement, primary category, and review recency.
                 </p>
               </div>
 
               <div className="p-4 rounded-xl bg-[#0d1322] border border-slate-800 space-y-1">
-                <h3 className="font-bold text-white text-base">Step 2: Test Mobile Tap-to-Call</h3>
+                <h3 className="font-bold text-white text-base">Step 2: Test Mobile Contact Accessibility</h3>
                 <p className="text-xs text-slate-400">
-                  Open your website on a mobile device. Can you tap a phone button immediately without scrolling? Does the page load in under 2 seconds?
+                  Open your site on a mobile device. Verify if click-to-call buttons are accessible without scrolling and that page loading is fast.
                 </p>
               </div>
 
               <div className="p-4 rounded-xl bg-[#0d1322] border border-slate-800 space-y-1">
-                <h3 className="font-bold text-white text-base">Step 3: Test After-Hours Answering</h3>
+                <h3 className="font-bold text-white text-base">Step 3: Evaluate After-Hours Call Handling</h3>
                 <p className="text-xs text-slate-400">
-                  Call your main office line at 7:30 PM on a Tuesday. What happens? Do callers get voicemail, or do they receive an instant text acknowledgment?
+                  Place a test call to your main office line after 6:00 PM. Check whether callers reach a voicemail system or receive immediate text response confirmation.
                 </p>
               </div>
 
               <div className="p-4 rounded-xl bg-[#0d1322] border border-slate-800 space-y-1">
-                <h3 className="font-bold text-white text-base">Step 4: Audit Response Time Latency</h3>
+                <h3 className="font-bold text-white text-base">Step 4: Measure Response Time Latency</h3>
                 <p className="text-xs text-slate-400">
-                  Submit a test contact form on your website. Time how many minutes pass before your office calls or texts back.
+                  Submit a contact request form and record the time elapsed before your office calls or sends an SMS follow-up.
                 </p>
               </div>
 
               <div className="p-4 rounded-xl bg-[#0d1322] border border-slate-800 space-y-1">
-                <h3 className="font-bold text-white text-base">Step 5: Inspect Open Equipment Replacement Quotes</h3>
+                <h3 className="font-bold text-white text-base">Step 5: Review Unsigned Estimate Follow-Up</h3>
                 <p className="text-xs text-slate-400">
-                  Review all un-signed $5,000+ system replacement quotes from the past 30 days. How many received automated follow-up messages?
+                  Examine open system replacement quotes from the past month to determine whether automated follow-ups were sent.
                 </p>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function HvacCustomerJourneyAuditPage() {
           <section className="space-y-3">
             <h2 className="text-xl font-bold text-white">Let Hygroon Automate Your Audit</h2>
             <p>
-              Rather than manually checking every touchpoint, Hygroon&apos;s 60-second diagnostic tool automatically evaluates your Google Maps rank, review recency, mobile speed, and competitor benchmark positioning.
+              Hygroon&apos;s 60-second diagnostic tool automatically evaluates your Google Maps position, review recency, mobile performance, and local positioning.
             </p>
             <div className="pt-2 flex flex-wrap gap-4 text-xs font-semibold">
               <Link href="/analyze" className="text-amber-400 hover:underline flex items-center gap-1">

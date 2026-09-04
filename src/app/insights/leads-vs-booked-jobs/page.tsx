@@ -10,7 +10,7 @@ import { TrendingUp, CheckCircle2, ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Leads vs Booked Jobs: Measuring Real Demand Leakage in Home Services | Hygroon',
   description:
-    'Learn why measuring raw lead volume hides true revenue leakage, and how top home service businesses track the full journey from initial search to dispatched booked job.',
+    'Learn why measuring raw lead volume alone masks revenue leakage, and how home service businesses track conversion from search discovery to dispatched work.',
   alternates: { canonical: '/insights/leads-vs-booked-jobs' },
   openGraph: {
     title: 'Leads vs Booked Jobs: Measuring Real Demand Leakage in Home Services',
@@ -67,45 +67,45 @@ export default function LeadsVsBookedJobsPage() {
             Leads vs Booked Jobs: Calculating Real Demand Leakage
           </h1>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-            High lead volume means nothing if inquiries drop off before a technician is dispatched. Here is how to measure true end-to-end conversion.
+            High lead volume means little if inquiries drop off before a technician is dispatched. Here is how to measure end-to-end conversion.
           </p>
         </header>
 
         <div className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 space-y-6 text-sm text-slate-300 leading-relaxed">
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-white">The Vanity Lead Illusion</h2>
+            <h2 className="text-xl font-bold text-white">The Lead Count Illusion</h2>
             <p>
-              Traditional marketing agencies report raw lead numbers: web form submissions, phone call clicks, and chat bot starts. However, for a home service business owner, a raw lead is not revenue.
+              Standard digital metrics often focus on raw inquiry counts: form fills, button taps, and call attempts. However, for a service business owner, an inquiry only creates value when converted into a scheduled service call.
             </p>
             <p>
-              Up to 40% of initial raw leads fail to turn into paid service calls due to operational leakage points between initial inquiry and technician dispatch.
+              A substantial portion of raw initial inquiries can be lost to operational friction between initial inquiry and actual technician dispatch.
             </p>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-white">Where the Leakage Occurs</h2>
+            <h2 className="text-xl font-bold text-white">Common Conversion Leakage Points</h2>
             <div className="space-y-3">
               <div className="p-4 rounded-xl bg-[#0d1322] border border-slate-800 flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-bold text-white text-sm">Response Latency Drop-Off</h3>
-                  <p className="text-xs text-slate-400">Callers who wait more than a few minutes for a call back reach out to competitors.</p>
+                  <h3 className="font-bold text-white text-sm">Slow Initial Follow-Up</h3>
+                  <p className="text-xs text-slate-400">Callers who wait too long for a response often contact alternative service providers.</p>
                 </div>
               </div>
 
               <div className="p-4 rounded-xl bg-[#0d1322] border border-slate-800 flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-bold text-white text-sm">After-Hours Unanswered Calls</h3>
-                  <p className="text-xs text-slate-400">Evening and weekend callers hanging up without leaving voicemail messages.</p>
+                  <h3 className="font-bold text-white text-sm">Unassisted After-Hours Calls</h3>
+                  <p className="text-xs text-slate-400">Evening calls going to standard voicemail without immediate automated confirmation.</p>
                 </div>
               </div>
 
               <div className="p-4 rounded-xl bg-[#0d1322] border border-slate-800 flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-bold text-white text-sm">Dormant Estimate Decay</h3>
-                  <p className="text-xs text-slate-400">$5,000 to $15,000 system replacement quotes sitting un-followed after initial presentation.</p>
+                  <h3 className="font-bold text-white text-sm">Dormant Quote Follow-Up</h3>
+                  <p className="text-xs text-slate-400">Presented replacement estimates sitting without structured follow-up routines.</p>
                 </div>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function LeadsVsBookedJobsPage() {
           <section className="space-y-3">
             <h2 className="text-xl font-bold text-white">Shifting to Booked-Work Optimization</h2>
             <p>
-              Hygroon aligns your local digital strategy around actual booked jobs. By uniting Google Maps prominence, instant SMS textback, and automated estimate nurturing, we eliminate the conversion gap.
+              Hygroon aligns your local search and digital intake around booked service calls. By pairing Google Maps prominence with automated SMS response and quote follow-up, we help eliminate intake drop-off points.
             </p>
             <div className="pt-2 flex flex-wrap gap-4 text-xs font-semibold">
               <Link href="/how-it-works" className="text-amber-400 hover:underline flex items-center gap-1">

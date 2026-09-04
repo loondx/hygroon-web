@@ -2,6 +2,9 @@
 // funnel. Safe no-op when NEXT_PUBLIC_GA_MEASUREMENT_ID isn't set (e.g. in
 // dev, or before a real GA4 property exists) — never throws, never blocks
 // the calling flow. Never pass PII (email, business name, phone) as a param.
+
+import { getAttribution, getAiSearchReferral } from './leadContext';
+
 declare global {
   interface Window {
     dataLayer?: unknown[];
@@ -15,7 +18,19 @@ type EventParams = Record<string, string | number | boolean | undefined>;
 
 function track(name: string, params: EventParams = {}): void {
   if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
-  window.gtag('event', name, params);
+
+  const attr = getAttribution();
+  const aiRef = getAiSearchReferral();
+
+  const enrichedParams: EventParams = {
+    ...params,
+    ...(attr?.utm_source ? { utm_source: attr.utm_source } : {}),
+    ...(attr?.utm_medium ? { utm_medium: attr.utm_medium } : {}),
+    ...(attr?.referrer ? { referrer: attr.referrer } : {}),
+    ...(aiRef ? { ai_referral: aiRef } : {}),
+  };
+
+  window.gtag('event', name, enrichedParams);
 }
 
 /** /analyze form submitted and the backend accepted the audit request. */
@@ -58,12 +73,12 @@ export function trackAnalyzeCtaClick(params: { source: string }): void {
   track('analyze_cta_click', params);
 }
 
-/** The "Book a Growth Call" CTA was clicked. Paired with trackContactAction (unchanged) for backward compatibility. */
+/** The "Book a Growth Call" CTA was clicked. Paired with trackContactAction for backward compatibility. */
 export function trackGrowthCallClick(params: { source: string; industry?: string }): void {
   track('growth_call_click', params);
 }
 
-/** A /contact mailto action was clicked. Paired with trackContactAction (unchanged) for backward compatibility. */
+/** A /contact mailto action was clicked. Paired with trackContactAction for backward compatibility. */
 export function trackContactClick(params: { source: string }): void {
   track('contact_click', params);
 }

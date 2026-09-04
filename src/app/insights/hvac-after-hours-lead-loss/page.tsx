@@ -5,12 +5,12 @@ import { brandConfig } from '@/config/brand.config';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import AnalyzeCta from '@/components/AnalyzeCta';
 import GrowthCallCta from '@/components/GrowthCallCta';
-import { PhoneCall, Clock, ShieldCheck, ArrowRight, BookOpen } from 'lucide-react';
+import { Clock, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Why After-Hours HVAC Calls Fail to Convert & How to Recover Them | Hygroon',
   description:
-    'Discover why 35% of emergency HVAC inquiries occur after hours and how automated missed call SMS textbacks capture lost revenue before callers dial competitors.',
+    'Examine how uncaptured evening and weekend HVAC phone calls create revenue leakage, and how automated SMS textbacks protect distressed inquiry capture.',
   alternates: { canonical: '/insights/hvac-after-hours-lead-loss' },
   openGraph: {
     title: 'Why After-Hours HVAC Calls Fail to Convert & How to Recover Them',
@@ -62,7 +62,7 @@ export default function HvacAfterHoursLeadLossPage() {
         <header className="space-y-4 text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-wider">
             <Clock className="w-3.5 h-3.5" />
-            <span>HVAC Market Research</span>
+            <span>HVAC Operational Analysis</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
             Why After-Hours HVAC Calls Fail to Convert (And How to Fix It)
@@ -74,50 +74,50 @@ export default function HvacAfterHoursLeadLossPage() {
 
         <div className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 space-y-6 text-sm text-slate-300 leading-relaxed">
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-white">The Hidden Cost of Unanswered Evening Calls</h2>
+            <h2 className="text-xl font-bold text-white">The Cost of Unanswered Evening Inquiries</h2>
             <p>
-              For heating and air conditioning contractors across the United States, peak customer distress frequently occurs outside standard 8:00 AM to 5:00 PM operating hours. When an air conditioner fails during a summer heatwave or a furnace stops on a freezing winter evening, homeowners act immediately.
+              For heating and air conditioning contractors across the United States, peak customer distress frequently occurs outside standard 8:00 AM to 5:00 PM operating hours. When an air conditioner fails during a summer heatwave or a furnace stops on a freezing winter evening, homeowners seek immediate help.
             </p>
             <p>
-              Data across home service inquiries indicates that up to 35% of inbound call volume arrives during evenings, weekends, and holidays. When these incoming calls go to traditional voicemail, over 80% of distress callers hang up without leaving a message and immediately call the next contractor listed in the Google Maps 3-Pack.
+              In home service operations, after-hours inbound calls frequently reach unanswered office lines or standard voicemail boxes. Distressed callers facing severe indoor conditions rarely leave voicemail messages: instead, they return to search results to call another local service contractor.
             </p>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-white">Why Traditional Voicemail Fails Distressed Homeowners</h2>
+            <h2 className="text-xl font-bold text-white">Why Voicemail Fails Distressed Callers</h2>
             <p>
-              Voicemail creates uncertainty. A homeowner facing indoor temperatures above 90 degrees or below freezing cannot wait until morning to discover if a technician will respond. They require immediate acknowledgment that their emergency has been received.
+              Standard voicemail provides no immediate dispatch confirmation or response expectation. Homeowners facing extreme temperature conditions need quick assurance that a qualified technician is aware of their issue.
             </p>
             <ul className="list-disc pl-5 space-y-2 text-slate-400">
               <li>
-                <strong className="text-slate-200">Zero Acknowledgment:</strong> Voicemail provides no timeline or dispatch commitment.
+                <strong className="text-slate-200">Lack of Immediate Confirmation:</strong> Voicemail leaves callers uncertain whether their call will be answered tonight or tomorrow.
               </li>
               <li>
-                <strong className="text-slate-200">Competitor Speed:</strong> The second contractor called who provides an instant automated text response locks in the booking.
+                <strong className="text-slate-200">Competitor Response Speed:</strong> A competing business that provides immediate call acknowledgment or instant SMS textbacks usually captures the dispatch opportunity.
               </li>
               <li>
-                <strong className="text-slate-200">High-Margin Loss:</strong> Emergency replacement opportunities ($8,000 to $15,000 contracts) are frequently lost to slower response times.
+                <strong className="text-slate-200">High-Value Job Leakage:</strong> Emergency service calls often represent immediate repair revenue or complete system replacement opportunities.
               </li>
             </ul>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-white">The 15-Second Missed Call Textback Solution</h2>
+            <h2 className="text-xl font-bold text-white">Automated Missed Call SMS Engagement</h2>
             <p>
-              Hygroon solves after-hours demand leakage by deploying automated SMS textback workflows. When an incoming phone call goes unanswered, an intelligent text message triggers within 15 seconds:
+              Hygroon addresses after-hours demand leakage by implementing automated SMS textback workflows. When an inbound call goes unanswered outside office hours, an automated response triggers within seconds:
             </p>
             <blockquote className="p-4 rounded-xl bg-[#0d1322] border-l-4 border-amber-500 italic text-slate-200">
-              &quot;Hi, thanks for calling [Contractor Name]! We&apos;re currently on a service call or assisting another customer. Reply here with your address and AC issue for priority dispatch.&quot;
+              &quot;Hi, thanks for calling [Contractor Name]! We&apos;re currently assisting another customer. Reply here with your service address and equipment issue for priority dispatch.&quot;
             </blockquote>
             <p>
-              This immediate text engagement reassures the homeowner, initiates two-way communication, and prevents them from returning to Google search to call a competitor.
+              This immediate text communication confirms receipt of the request, opens a direct two-way conversation, and reduces the likelihood of the customer contacting another provider.
             </p>
           </section>
 
           <section className="space-y-3">
             <h2 className="text-xl font-bold text-white">Next Steps for HVAC Business Owners</h2>
             <p>
-              Auditing after-hours responsiveness is a key component of Hygroon&apos;s 5-stage customer journey audit. Learn more about how we evaluate local search prominence and speed-to-lead for your business.
+              Auditing after-hours intake responsiveness is part of Hygroon&apos;s 5-stage customer journey evaluation framework. Discover how we assess search prominence and response velocity for home service businesses.
             </p>
             <div className="pt-2 flex flex-wrap gap-4 text-xs font-semibold">
               <Link href="/industries/hvac" className="text-amber-400 hover:underline flex items-center gap-1">
@@ -136,7 +136,7 @@ export default function HvacAfterHoursLeadLossPage() {
         <div className="p-8 rounded-2xl bg-gradient-to-r from-amber-500/10 via-slate-900 to-amber-500/10 border border-amber-500/20 text-center space-y-4">
           <h3 className="text-xl font-bold text-white">See Where Your Business Is Losing Evening Calls</h3>
           <p className="text-xs text-slate-300 max-w-lg mx-auto">
-            Run a free 60-second market diagnostic to evaluate your local search rank, review velocity, and response latency.
+            Run a free 60-second market diagnostic to evaluate your local search rank, review recency, and response latency.
           </p>
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
             <AnalyzeCta source="article_after_hours" />
