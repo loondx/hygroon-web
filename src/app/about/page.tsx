@@ -3,12 +3,17 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { brandConfig } from '@/config/brand.config';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
-import { Compass, ArrowRight, Target, ShieldCheck, Cpu, Users } from 'lucide-react';
+import { Compass, ArrowRight, Target, ShieldCheck } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: `${brandConfig.name} builds growth systems for local service businesses, not vanity marketing metrics. Here's the philosophy behind it.`,
+  title: 'About Hygroon | Premier Local SEO & Growth Agency',
+  description: `${brandConfig.name} is the specialized Local SEO and revenue growth agency for HVAC contractors and home service businesses. Learn our market-tested methodology.`,
   alternates: { canonical: '/about' },
+  openGraph: {
+    title: 'About Hygroon | Premier Local SEO & Growth Agency',
+    description: 'Specialized Local SEO and revenue growth agency for HVAC contractors and service businesses.',
+    url: 'https://hygroon.com/about',
+  },
 };
 
 export default function AboutPage() {
@@ -23,22 +28,22 @@ export default function AboutPage() {
             <span>About {brandConfig.name}</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
-            Growth Systems Built on Market Truth
+            The Premier Local SEO & Growth Agency for Service Contractors
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            We started Hygroon because traditional marketing agencies sell vanity clicks while service businesses struggle with unclosed estimates and lost emergency calls.
+            We started Hygroon because traditional marketing agencies sell vanity clicks while HVAC, plumbing, and service businesses lose thousands on un-answered calls and low Google Maps rankings.
           </p>
         </div>
 
         {/* Philosophy Card */}
         <div className="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 space-y-6">
-          <h2 className="text-xl font-bold text-white">Our Philosophy</h2>
+          <h2 className="text-xl font-bold text-white">Our Local SEO Philosophy</h2>
           <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
             <p>
-              A service business does not win by spending more on ads than its competitors. It wins by answering faster, establishing overwhelming local reputation, and delivering structured proposals that make customer decisions effortless.
+              A service contractor does not win by burning budget on ad clicks. You win by commanding the Google Maps 3-Pack, maintaining active review velocity, responding within 15 seconds to missed calls, and closing replacement quotes with systematized follow-up.
             </p>
             <p>
-              Every tool we build inside <strong>Hygroon OS</strong> is designed to remove friction between a customer having an urgent service need and your team completing the work.
+              Every system built inside <strong>Hygroon OS</strong> is engineered to eliminate revenue leak between a local customer searching for emergency service and your technician dispatching to the job site.
             </p>
           </div>
         </div>
@@ -47,17 +52,17 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="p-6 rounded-xl bg-[#0d1322] border border-slate-800 space-y-3">
             <Target className="w-6 h-6 text-amber-400" />
-            <h3 className="font-bold text-white text-base">Outcome-Driven Engagements</h3>
+            <h3 className="font-bold text-white text-base">Outcome-Driven Lead Generation</h3>
             <p className="text-xs text-slate-400 leading-relaxed">
-              We define clear milestones for recovered enquiry volume and speed to estimate response. No vague reports or opaque retainers.
+              We define clear performance targets for recovered call volume, Google 3-Pack placement, and quote closing speed. No vague reports or bloated retainers.
             </p>
           </div>
 
           <div className="p-6 rounded-xl bg-[#0d1322] border border-slate-800 space-y-3">
             <ShieldCheck className="w-6 h-6 text-emerald-400" />
-            <h3 className="font-bold text-white text-base">Zero Mock Integrity</h3>
+            <h3 className="font-bold text-white text-base">Verifiable Local Market Data</h3>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Every competitive rank, distance metric, and review count is grounded in verifiable local market datasets.
+              Every competitive rank, distance metric, and review velocity benchmark is derived from real local search data.
             </p>
           </div>
         </div>

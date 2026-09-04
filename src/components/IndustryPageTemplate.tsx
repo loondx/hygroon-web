@@ -16,6 +16,11 @@ export interface IndustrySection {
   pillars?: IndustryPillar[];
 }
 
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 export interface IndustryPageTemplateProps {
   slug: string;
   breadcrumbName: string;
@@ -25,6 +30,7 @@ export interface IndustryPageTemplateProps {
   heroBody: string;
   pillars?: IndustryPillar[];
   sections?: IndustrySection[];
+  faqs?: FAQItem[];
   ctaTitle: string;
   ctaBody: string;
 }
@@ -40,6 +46,7 @@ export default function IndustryPageTemplate({
   heroBody,
   pillars = [],
   sections = [],
+  faqs = [],
   ctaTitle,
   ctaBody,
 }: IndustryPageTemplateProps) {
@@ -107,6 +114,44 @@ export default function IndustryPageTemplate({
               </section>
             ))}
           </div>
+        )}
+
+        
+        {/* FAQ Section & FAQ Schema */}
+        {faqs.length > 0 && (
+          <>
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: faqs.map((faq) => ({
+                    "@type": "Question",
+                    name: faq.question,
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: faq.answer,
+                    },
+                  })),
+                }),
+              }}
+            />
+            <section className="space-y-6 pt-6 border-t border-slate-800">
+              <div className="text-center space-y-2">
+                <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">Frequently Asked Questions</h2>
+                <p className="text-sm text-slate-400">Everything HVAC contractors ask about ranking and converting local demand.</p>
+              </div>
+              <div className="space-y-4 max-w-3xl mx-auto">
+                {faqs.map((faq) => (
+                  <div key={faq.question} className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800/80 space-y-2">
+                    <h3 className="text-lg font-bold text-white">{faq.question}</h3>
+                    <p className="text-sm text-slate-300 leading-relaxed">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          </>
         )}
 
         {/* CTA Section */}
