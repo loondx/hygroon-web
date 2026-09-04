@@ -8,7 +8,7 @@ import GrowthCallCta from '@/components/GrowthCallCta';
 import { Clock, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Why After-Hours HVAC Calls Fail to Convert & How to Recover Them | Hygroon',
+  title: 'Why After-Hours HVAC Calls Fail to Convert & How to Recover Them',
   description:
     'Examine how uncaptured evening and weekend HVAC phone calls create revenue leakage, and how automated SMS textbacks protect distressed inquiry capture.',
   alternates: { canonical: '/insights/hvac-after-hours-lead-loss' },

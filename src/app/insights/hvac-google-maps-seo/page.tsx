@@ -8,7 +8,7 @@ import GrowthCallCta from '@/components/GrowthCallCta';
 import { MapPin, Search, Star, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Google Maps 3-Pack Prominence Factors for HVAC Contractors | Hygroon',
+  title: 'Google Maps 3-Pack Prominence Factors for HVAC Contractors',
   description:
     'Learn how Google Business Profile signals, local review recency, service area configuration, and citation accuracy impact local map rankings for HVAC contractors.',
   alternates: { canonical: '/insights/hvac-google-maps-seo' },

@@ -8,7 +8,7 @@ import GrowthCallCta from '@/components/GrowthCallCta';
 import { MonitorSmartphone, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Optimizing HVAC Mobile Websites for Emergency One-Tap Conversion | Hygroon',
+  title: 'Optimizing HVAC Mobile Websites for Emergency One-Tap Conversion',
   description:
     'Learn how mobile site performance, single-tap call buttons, and trust indicators help U.S. HVAC contractors convert mobile search traffic into dispatch calls.',
   alternates: { canonical: '/insights/hvac-website-conversion' },

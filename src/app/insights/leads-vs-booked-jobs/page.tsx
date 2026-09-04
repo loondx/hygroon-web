@@ -8,7 +8,7 @@ import GrowthCallCta from '@/components/GrowthCallCta';
 import { TrendingUp, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Leads vs Booked Jobs: Measuring Real Demand Leakage in Home Services | Hygroon',
+  title: 'Leads vs Booked Jobs: Measuring Real Demand Leakage in Home Services',
   description:
     'Learn why measuring raw lead volume alone masks revenue leakage, and how home service businesses track conversion from search discovery to dispatched work.',
   alternates: { canonical: '/insights/leads-vs-booked-jobs' },

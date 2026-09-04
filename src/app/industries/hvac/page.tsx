@@ -3,7 +3,7 @@ import IndustryPageTemplate from "@/components/IndustryPageTemplate";
 import { MapPin, Star, MonitorSmartphone, PhoneCall, FileCheck, Compass, Clock, Search, ShieldCheck, TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HVAC Local SEO & Digital Marketing Agency | Hygroon",
+  title: "HVAC Local SEO & Digital Marketing Agency",
   description:
     "Hygroon is the premier Local SEO and growth agency for HVAC contractors. Rank #1 on Google Maps 3-Pack, dominate local AC repair searches, capture missed calls with SMS textback, and turn emergency search demand into high-margin booked HVAC jobs.",
   keywords: [

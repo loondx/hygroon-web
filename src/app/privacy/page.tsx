@@ -5,7 +5,7 @@ import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import { ShieldCheck, Mail } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Hygroon',
+  title: 'Privacy Policy',
   description:
     'Learn how Hygroon collects, uses, and protects business data, diagnostic audit inputs, and customer privacy.',
   alternates: { canonical: '/privacy' },

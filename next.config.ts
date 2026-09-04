@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
         destination: '/analyze',
         permanent: true,
       },
+      {
+        source: '/consultation',
+        destination: '/growth-review',
+        permanent: true,
+      },
     ];
   },
   async rewrites() {

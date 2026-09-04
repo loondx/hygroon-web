@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 
 export const metadata: Metadata = {
-  title: 'Free HVAC & Service Business Local SEO Diagnostic | Hygroon',
+  title: 'Free HVAC & Service Business Local SEO Diagnostic',
   description:
     'Free 60-second Local SEO audit for HVAC contractors and home service businesses. Analyze your Google Maps 3-Pack rank, review velocity, missed call speed, and local search visibility.',
   alternates: { canonical: '/analyze' },

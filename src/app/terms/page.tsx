@@ -5,7 +5,7 @@ import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import { FileText, Mail } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Hygroon',
+  title: 'Terms of Service',
   description:
     'Terms of Service governing the use of Hygroon website, business diagnostic tools, and growth systems.',
   alternates: { canonical: '/terms' },

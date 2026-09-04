@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Free HVAC & Service Business Growth Review | Hygroon',
+  title: 'Free HVAC & Service Business Growth Review',
   description:
     'Request a free Local SEO & Growth Review for your HVAC or home service business. See how customers find, contact, and book with your business.',
   alternates: { canonical: '/growth-review' },

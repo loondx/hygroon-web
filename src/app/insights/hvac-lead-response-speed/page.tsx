@@ -8,7 +8,7 @@ import GrowthCallCta from '@/components/GrowthCallCta';
 import { Zap, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Speed-to-Lead Mechanics: Response Time Latency for HVAC Contractors | Hygroon',
+  title: 'Speed-to-Lead Mechanics: Response Time Latency for HVAC Contractors',
   description:
     'Learn how response latency impacts customer inquiry capture and how U.S. HVAC businesses reduce response time to lock in more booked service calls.',
   alternates: { canonical: '/insights/hvac-lead-response-speed' },

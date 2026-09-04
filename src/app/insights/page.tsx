@@ -6,7 +6,7 @@ import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import { BookOpen, ArrowRight, Clock, Zap, MonitorSmartphone, MapPin, TrendingUp, Compass } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'HVAC Market Insights & Growth Research | Hygroon',
+  title: 'HVAC Market Insights & Growth Research',
   description:
     'Explore Hygroon editorial insights and research on HVAC Local SEO, speed-to-lead benchmarks, after-hours lead loss, and mobile website conversion.',
   alternates: { canonical: '/insights' },

@@ -8,7 +8,7 @@ import GrowthCallCta from '@/components/GrowthCallCta';
 import { Compass, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'The HVAC Customer Journey Audit Guide | Hygroon',
+  title: 'The HVAC Customer Journey Audit Guide',
   description:
     'A step-by-step audit framework for U.S. HVAC contractors to evaluate local search visibility, website mobile UX, speed-to-lead, and quote follow-up.',
   alternates: { canonical: '/insights/hvac-customer-journey-audit' },
