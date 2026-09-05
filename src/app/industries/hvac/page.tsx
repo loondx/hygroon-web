@@ -158,6 +158,16 @@ export default function HvacIndustryPage() {
           answer: "Our diagnostic evaluates your HVAC company's Google Maps 3-Pack ranking, review velocity, mobile page speed, after-hours call vulnerability, and competitor benchmark positioning with zero obligation.",
         },
       ]}
+      relatedArticles={[
+        {
+          title: 'Why After-Hours HVAC Calls Fail to Convert & How to Recover Them',
+          href: '/insights/hvac-after-hours-lead-loss',
+        },
+        {
+          title: 'The 15-Second Rule: Speed-to-Lead Benchmarks for HVAC Contractors',
+          href: '/insights/hvac-lead-response-speed',
+        },
+      ]}
       ctaTitle="Analyze Your HVAC Business Now"
       ctaBody="Get a free 60-second snapshot of your HVAC company's local Google Maps ranking, review velocity, response speed, and market growth opportunities."
     />

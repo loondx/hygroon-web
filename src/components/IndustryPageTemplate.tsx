@@ -21,6 +21,11 @@ export interface FAQItem {
   answer: string;
 }
 
+export interface RelatedArticle {
+  title: string;
+  href: string;
+}
+
 export interface IndustryPageTemplateProps {
   slug: string;
   breadcrumbName: string;
@@ -31,6 +36,7 @@ export interface IndustryPageTemplateProps {
   pillars?: IndustryPillar[];
   sections?: IndustrySection[];
   faqs?: FAQItem[];
+  relatedArticles?: RelatedArticle[];
   ctaTitle: string;
   ctaBody: string;
 }
@@ -47,6 +53,7 @@ export default function IndustryPageTemplate({
   pillars = [],
   sections = [],
   faqs = [],
+  relatedArticles = [],
   ctaTitle,
   ctaBody,
 }: IndustryPageTemplateProps) {
@@ -152,6 +159,25 @@ export default function IndustryPageTemplate({
               </div>
             </section>
           </>
+        )}
+
+        {/* Related Reading */}
+        {relatedArticles.length > 0 && (
+          <section className="space-y-4 pt-6 border-t border-slate-800">
+            <h2 className="text-xl font-bold text-white">Related Reading</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {relatedArticles.map((article) => (
+                <Link
+                  key={article.href}
+                  href={article.href}
+                  className="p-4 rounded-xl bg-slate-900/40 border border-slate-800 hover:border-amber-500/40 text-sm font-semibold text-slate-200 hover:text-amber-400 transition-all flex items-center justify-between gap-2"
+                >
+                  <span>{article.title}</span>
+                  <ArrowRight className="w-4 h-4 shrink-0" />
+                </Link>
+              ))}
+            </div>
+          </section>
         )}
 
         {/* CTA Section */}
