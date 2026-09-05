@@ -1,5 +1,5 @@
 import React from 'react';
-import JourneyLeak from '@/components/JourneyLeak';
+import dynamic from 'next/dynamic';
 import DemandToBookedWork from '@/components/DemandToBookedWork';
 import EvidenceModel from '@/components/EvidenceModel';
 import FeaturedIndustries from '@/components/FeaturedIndustries';
@@ -7,6 +7,13 @@ import AnalyzeCta from '@/components/AnalyzeCta';
 import GrowthCallCta from '@/components/GrowthCallCta';
 import LandingAnalytics from '@/components/LandingAnalytics';
 import { PhoneCall, ShieldCheck, Sparkles, Zap } from 'lucide-react';
+
+// Below the fold and the only homepage section needing real client interactivity
+// (autoplay + click-to-select state). Code-split so its hydration JS downloads
+// and runs on its own chunk instead of competing with the hero paint — still
+// fully server-rendered (ssr defaults to true), so there's no content loss and
+// no layout shift, just a separate chunk for later hydration.
+const JourneyLeak = dynamic(() => import('@/components/JourneyLeak'));
 
 const SECONDARY_BUTTON =
   'w-full sm:w-auto px-6 h-14 rounded-xl border border-slate-700 hover:border-slate-500 text-slate-200 hover:text-white font-semibold text-sm transition-all flex items-center justify-center gap-2 bg-slate-900/60 backdrop-blur-md hover:bg-slate-800/80 shadow-lg';
