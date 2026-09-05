@@ -33,7 +33,7 @@ export default function BreadcrumbJsonLd({ trail }: { trail: Crumb[] }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <nav aria-label="Breadcrumb" className="px-4 sm:px-6 lg:px-8 pb-4 sm:pb-6">
-        <ol className="flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
+        <ol className="flex flex-wrap items-center gap-1.5 text-xs text-slate-400">
           {full.map((crumb, i) => {
             const isLast = i === full.length - 1;
             return (
