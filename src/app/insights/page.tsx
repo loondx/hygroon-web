@@ -106,7 +106,7 @@ export default function InsightsPage() {
                       <Icon className="w-3.5 h-3.5" />
                       {art.category}
                     </span>
-                    <span className="text-slate-500 font-medium">{art.readTime}</span>
+                    <span className="text-slate-400 font-medium">{art.readTime}</span>
                   </div>
 
                   <h2 className="text-xl font-bold text-white group-hover:text-amber-400 transition-colors leading-snug">
