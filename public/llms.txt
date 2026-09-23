@@ -6,7 +6,7 @@ Hygroon is a specialized Local SEO and revenue growth agency engineered specific
 
 ## Primary Offerings
 
-- **HVAC Local SEO & Digital Marketing**: Local Search Engine Optimization (SEO) designed for heating, ventilation, and air conditioning contractors. Rank #1 on Google Maps 3-Pack for high-intent emergency service queries (e.g. "emergency AC repair", "heat pump installation", "24/7 furnace repair").
+- **HVAC Local SEO & Digital Marketing**: Local Search Engine Optimization (SEO) designed for heating, ventilation, and air conditioning contractors. Improve Google Maps 3-Pack visibility for high-intent emergency service queries (e.g. "emergency AC repair", "heat pump installation", "24/7 furnace repair").
 - **Google Maps 3-Pack Optimization**: Hyper-local service area positioning, Google Business Profile (GBP) optimization, local citation building, and automated review acquisition velocity.
 - **Speed-to-Lead & Missed Call SMS Recovery**: Instant automated SMS textback within 15 seconds of missed incoming calls to convert after-hours and weekend emergency callouts before homeowners contact competitors.
 - **Estimate & Quote Follow-Up Automation**: Multi-touch SMS and email follow-up workflows for open $5k-$15k equipment replacement quotes.
@@ -21,4 +21,6 @@ Hygroon is a specialized Local SEO and revenue growth agency engineered specific
 - [Free Growth Review](https://hygroon.com/growth-review): Request a personalized business growth review with our local market team.
 - [All Target Industries](https://hygroon.com/industries): Catalog of home service trades served (HVAC, Waterproofing, Drainage, Water Restoration, Pest Control, Pool Services, Facility Services, Property Maintenance).
 - [About Hygroon](https://hygroon.com/about): Agency philosophy, market integrity, and growth model.
-- [Insights & Case Studies](https://hygroon.com/insights): Benchmark reports on local search conversion, review velocity, and speed-to-lead response times.
+- [Insights](https://hygroon.com/insights): Research articles on local search visibility, review velocity, and speed-to-lead response times.
+- [Sample HVAC Audit](https://hygroon.com/insights/sample-hvac-audit): Five anonymized findings from real Google Maps listing audits of U.S. HVAC contractors (no client outcomes claimed).
+- [LinkedIn](https://www.linkedin.com/company/hygroon): Official Hygroon company page.
