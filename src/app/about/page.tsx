@@ -6,12 +6,12 @@ import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd';
 import { Compass, ArrowRight, Target, ShieldCheck } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About Hygroon | Premier Local SEO & Growth Agency',
-  description: `${brandConfig.name} is the specialized Local SEO and revenue growth agency for HVAC contractors and home service businesses. Learn our market-tested methodology.`,
+  title: 'About Hygroon | HVAC Growth Systems & Diagnostics',
+  description: `${brandConfig.name} builds growth systems and customer-journey diagnostics for U.S. HVAC and home-service businesses. Learn our market-tested methodology.`,
   alternates: { canonical: '/about' },
   openGraph: {
-    title: 'About Hygroon | Premier Local SEO & Growth Agency',
-    description: 'Specialized Local SEO and revenue growth agency for HVAC contractors and service businesses.',
+    title: 'About Hygroon | HVAC Growth Systems & Diagnostics',
+    description: 'Growth systems and customer-journey diagnostics for U.S. HVAC and home-service businesses.',
     url: 'https://hygroon.com/about',
   },
 };
@@ -28,7 +28,7 @@ export default function AboutPage() {
             <span>About {brandConfig.name}</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
-            The Premier Local SEO & Growth Agency for Service Contractors
+            Growth Systems & Diagnostics for Service Contractors
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
             We started Hygroon because traditional marketing agencies sell vanity clicks while HVAC, plumbing, and service businesses lose thousands on un-answered calls and low Google Maps rankings.

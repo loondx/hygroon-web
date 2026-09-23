@@ -100,6 +100,11 @@ export default function Footer() {
                   Terms of Service
                 </Link>
               </li>
+              <li>
+                <Link href="/security" className="hover:text-white transition-colors">
+                  Security
+                </Link>
+              </li>
             </ul>
           </div>
 

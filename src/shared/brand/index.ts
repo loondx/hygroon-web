@@ -22,6 +22,7 @@ export interface HygroonBrandConfig {
   legalEntity?: string;
   socials: {
     linkedin?: string;
+    facebook?: string;
     twitter?: string;
     youtube?: string;
   };

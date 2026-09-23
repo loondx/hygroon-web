@@ -3,12 +3,12 @@ import IndustryPageTemplate from "@/components/IndustryPageTemplate";
 import { MapPin, Star, MonitorSmartphone, PhoneCall, FileCheck, Compass, Clock, Search, ShieldCheck, TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HVAC Local SEO & Digital Marketing Agency",
+  title: "HVAC Local SEO & Growth System",
   description:
-    "Hygroon is the premier Local SEO and growth agency for HVAC contractors. Rank #1 on Google Maps 3-Pack, dominate local AC repair searches, capture missed calls with SMS textback, and turn emergency search demand into high-margin booked HVAC jobs.",
+    "Hygroon builds Local SEO and growth systems for HVAC contractors: improve Google Maps 3-Pack visibility, capture local AC repair search demand, recover missed calls with SMS textback, and turn emergency search demand into booked HVAC jobs.",
   keywords: [
     "HVAC Local SEO Agency",
-    "HVAC Digital Marketing Agency",
+    "HVAC Growth System",
     "Local SEO for HVAC Contractors",
     "Google Maps 3-Pack for HVAC",
     "HVAC Lead Generation Agency",
@@ -18,18 +18,18 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/industries/hvac" },
   openGraph: {
-    title: "HVAC Local SEO & Digital Marketing Agency | Hygroon",
+    title: "HVAC Local SEO & Growth System | Hygroon",
     description:
-      "Rank #1 on Google Maps 3-Pack and capture high-intent HVAC search demand. Hygroon builds proven Local SEO and revenue growth engines for heating & cooling contractors.",
+      "Improve Google Maps 3-Pack visibility and capture high-intent HVAC search demand. Hygroon builds Local SEO and revenue growth systems for heating & cooling contractors.",
     url: "https://hygroon.com/industries/hvac",
     siteName: "Hygroon",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "HVAC Local SEO & Digital Marketing Agency | Hygroon",
+    title: "HVAC Local SEO & Growth System | Hygroon",
     description:
-      "Rank #1 on Google Maps 3-Pack and capture high-intent HVAC search demand.",
+      "Improve Google Maps 3-Pack visibility and capture high-intent HVAC search demand.",
   },
 };
 
@@ -60,7 +60,7 @@ export default function HvacIndustryPage() {
           ],
         },
         {
-          title: "Dominating Local HVAC Search Intent",
+          title: "Capturing Local HVAC Search Intent",
           body: "Hygroon optimizes your HVAC digital footprint for ultra-targeted local intent queries that generate immediate service dispatch opportunities.",
           pillars: [
             {
