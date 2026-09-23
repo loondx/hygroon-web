@@ -69,6 +69,14 @@ const ARTICLES = [
     icon: Compass,
     readTime: '6 min read',
   },
+  {
+    slug: 'sample-hvac-audit',
+    title: 'Sample Audit: What We Found in Real HVAC Google Maps Listings',
+    excerpt: 'Five anonymized findings from public Google Maps data: 24/7 claims contradicted by listing hours, duplicate listings, missing Call buttons, and rank gaps that reviews alone do not explain.',
+    category: 'Sample Audit',
+    icon: Compass,
+    readTime: '4 min read',
+  },
 ];
 
 export default function InsightsPage() {

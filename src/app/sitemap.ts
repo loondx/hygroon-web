@@ -22,6 +22,7 @@ const ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.S
   { path: '/insights/hvac-google-maps-seo', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/insights/leads-vs-booked-jobs', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/insights/hvac-customer-journey-audit', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/insights/sample-hvac-audit', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/results', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/about', priority: 0.5, changeFrequency: 'yearly' },
   { path: '/security', priority: 0.5, changeFrequency: 'yearly' },
