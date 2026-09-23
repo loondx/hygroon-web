@@ -47,9 +47,16 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
+    // Google Search and Apple's home-screen icon do not accept SVG here —
+    // both require a real raster favicon, so these must stay PNG/ICO.
+    icon: [
+      { url: "/favicon.ico", sizes: "16x16 32x32 48x48" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
@@ -66,9 +73,12 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
+        // Actual file is a 1024x1024 square, not the classic 1200x630 —
+        // declaring the real dimensions here (rather than the OG-recommended
+        // ones) so platforms don't reject/mis-crop it over a size mismatch.
         url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        width: 1024,
+        height: 1024,
         alt: `${brandConfig.name} - ${brandConfig.tagline}`,
         type: "image/png",
       },
@@ -83,21 +93,33 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        width: 1024,
+        height: 1024,
         alt: `${brandConfig.name} - ${brandConfig.tagline}`,
       },
     ],
   },
 };
 
+const canonicalSiteUrl = new URL(brandConfig.website).toString();
+
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: brandConfig.name,
-  url: brandConfig.website,
-  logo: `${brandConfig.website}/logo.svg`,
-  sameAs: brandConfig.socials.linkedin ? [brandConfig.socials.linkedin] : [],
+  alternateName: "Hygroon.com",
+  url: canonicalSiteUrl,
+  // Google's Logo/Organization guidance wants a raster image, not SVG.
+  logo: `${brandConfig.website}/icon-512.png`,
+  sameAs: [brandConfig.socials.linkedin, brandConfig.socials.facebook].filter(
+    (url): url is string => Boolean(url)
+  ),
+  email: brandConfig.supportEmail,
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: brandConfig.supportEmail,
+    contactType: "customer support",
+  },
   description: brandConfig.valueProposition,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -152,11 +174,15 @@ const organizationJsonLd = {
   },
 };
 
+// Google reads WebSite.name / alternateName on the homepage to decide the
+// site name shown in results, which is how a new brand like "Hygroon" gets
+// recognized as its own entity instead of being auto-corrected.
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: brandConfig.name,
-  url: brandConfig.website,
+  alternateName: ["Hygroon.com"],
+  url: canonicalSiteUrl,
 };
 
 export default function RootLayout({
